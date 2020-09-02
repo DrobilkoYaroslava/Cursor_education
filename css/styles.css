@@ -1,18 +1,27 @@
 body {
   background-color: blanchedalmond;
+  font-family: "Baloo Tamma 2", cursive;
 }
 body img {
-  display: list-item;
-  height: auto;
-  margin: 0 auto;
-  max-width: 100% !important;
-  min-width: 1px !important;
+  max-width: 600px;
+  width: auto;
   text-align: center;
 }
 .commands {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  font-size: 16px;
 }
+
 .main {
   background-color: cornsilk;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  max-width: 1200px;
+}
+header {
+  text-align: center;
+  color: darkblue;
 }
