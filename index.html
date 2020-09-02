@@ -16,13 +16,13 @@
       <header>
         <h1>Homework #1</h1>
         <h2>"VCS (Git, Github, gh-pages)</h2>
-        <h4><i>written by Yaroslava Drobilko</i></h4>
+        <h3><i>written by Yaroslava Drobilko</i></h3>
       </header>
       <!--commands-->
       <div class="commands">
-        <h3>Git Commands - base</h3>
+        <h2>Git Commands - base</h2>
         <p>
-          <h4>git config</h4>
+          <h3>git config</h3>
           <u>Usage:</u> <code> git config –global user.name “[name]” </code><br>
           <u>Usage:</u> <code> git config –global user.email “[email address]” </code><br>
           This command sets the author name and email address respectively to be
@@ -30,19 +30,19 @@
           <img src="img/1-9.png" alt="example 1">
         </p>
         <p>
-            <h4>git init</h4>
+            <h3>git init</h3>
             <u>Usage:</u> <code> git init [repository name] </code> <br>
             This command is used to start a new repository. <br>
             <img src="img/2-6.png" alt="example 2">
         </p>
         <p>
-            <h4>git status</h4>
+            <h3>git status</h3>
             <u>Usage:</u> <code> git status </code><br>
             This command lists all the files that have to be committed. <br>
             <img src="img/15-1.png" alt="example 3">
         </p>
         <p>
-            <h4>git add</h4>
+            <h3>git add</h3>
             <u>Usage:</u> <code> git add [file] </code><br>
             This command adds a file to the staging area. <br>
             <img src="img/5-4.png" alt="example 4"> <br>
@@ -51,7 +51,7 @@
             <img src="img/6-3.png" alt="example 5">
         </p>
         <p>
-            <h4>git commit</h4>
+            <h3>git commit</h3>
             <u>Usage:</u> <code> git commit -m “[ Type in the commit message]” </code><br>
             This command records or snapshots the file permanently in the version history. <br>
             <img src="img/7-3.png" alt="example 6"> <br>
@@ -62,13 +62,13 @@
             <img src="img/8-2.png" alt="example 7">
         </p>
         <p>
-            <h4>git log</h4>
+            <h3>git log</h3>
             <u>Usage:</u> <code> git log </code><br>
             This command is used to list the version history for the current branch. <br>
             <img src="img/18.png" alt="example 8">
        </p>
         <p>
-            <h4>git checkout</h4>
+            <h3>git checkout</h3>
             <u>Usage:</u> <code> git checkout [branch name] </code><br>
             This command is used to switch from one branch to another. <br>
             <img src="img/27.png" alt="example 9"> <br>
@@ -77,7 +77,7 @@
             <img src="img/28.png" alt="example 10">
         </p>
         <p>
-            <h4>git branch</h4>
+            <h3>git branch</h3>
             <u>Usage:</u> <code>git branch</code> <br>
             This command lists all the local branches in the current repository. <br>
             <img src="img/23.png" alt="example 11"> <br>
@@ -89,7 +89,7 @@
             <img src="img/25.png" alt="example 13"> <br>
         </p>
         <p>
-            <h4>git push</h4>
+            <h3>git push</h3>
             <u>Usage:</u> <code>git push [variable name] master</code> <br>
             This command sends the committed changes of master branch to your remote repository. <br>
             <img src="img/33.png" alt="example 14"> <br>
@@ -101,27 +101,27 @@
             <img src="img/36.png" alt="example 16">
         </p>
         <p>
-            <h4>git pull</h4>
+            <h3>git pull</h3>
             <u>Usage:</u> <code>git pull [Repository Link]</code> <br>
             This command fetches and merges changes on the remote server to your working directory. <br>
             <img src="img/38.png" alt="example 17"> 
         </p>
         <p>
-            <h4>git merge</h4>
+            <h3>git merge</h3>
             <u>Usage:</u> <code>git merge [branch name]</code> <br>
             This command merges the specified branch’s history into the current branch. <br>
             <img src="img/31-1.png" alt="example 18">
         </p>
         <p>
-            <h4>git clone</h4>
+            <h3>git clone</h3>
             <u>Usage:</u> <code>git clone [url]</code> <br>
             This command is used to obtain a repository from an existing URL. <br>
             <img src="img/4-4.png" alt="example 19">
         </p>
       </div>
       <!--Advanced-->
-      <div>
-        <h3>Commands - Advanced</h3>
+      <div class="commands">
+        <h2>Commands - Advanced</h2>
         
         <p>
             <ul>
@@ -150,20 +150,20 @@
         </p>
       </div>
       <!--about gitignor-->
-      <div>
-          <h3>How to use a .gitignore file and what is it</h3>
-          <p> We use a .gitignore file if there are some files that we never want commit. It lets Git know that it should ignore certain files and not track them. </p>
+      <div class="commands">
+          <h2>How to use a <span>.gitignore</span> file and what is it?</h2>
+          <p> We use a .gitignore file if there are some files that we <b>never want commit</b>. It lets Git know that it should ignore certain files and <b>not track them.</b> </p>
           <p> Here's how it works. A .gitignore file is a plain text file where each line contains a pattern for files/directories to
             ignore. Generally, this is placed in the root folder of the repository. However, you can
             put it in any folder in the repository and you can also have multiple .gitignore files. You can also create a global .gitignore file and any entries in that file will be ignored in all of your Git
             repositories.</p>
           <p>
               <h2>Wildcard</h2>
-              <ul>
-                  <li>* - matches 0 or more characters (except the /). So, for example, *.log matches any file ending with the .log extension.
+              <ul class="wildcard">
+                  <li> <span> <b> * </b></span>- matches 0 or more characters (except the /). So, for example, *.log matches any file ending with the .log extension.
                 </li>
-                <li>! - as a prefix to negate a file that would be ignored, for example, "!example.log"</li>
-                <li>*~ - matches any file ending with ~, such as "index.html~"</li>
+                <li><span> <b> ! </b></span>- as a prefix to negate a file that would be ignored, for example, "!example.log"</li>
+                <li><span> <b> *~ </b></span>- matches any file ending with ~, such as "index.html~"</li>
               </ul>
           </p> 
       </div>
