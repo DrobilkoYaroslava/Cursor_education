@@ -119,6 +119,54 @@
             <img src="img/4-4.png" alt="example 19">
         </p>
       </div>
+      <!--Advanced-->
+      <div>
+        <h3>Commands - Advanced</h3>
+        
+        <p>
+            <ul>
+                <li> 
+                    <b> git revert</b> is used to record some new commits to reverse the effect of some earlier commits (often only a faulty one). <br>
+                <a href="https://git-scm.com/docs/git-revert" target="_blank"> git-revert - Revert some existing commits</a>
+                </li>
+                <li>
+                    <b> git cherry-pick</b> It allows you to pick up one commit from another branch and insert it into the current one. As an
+                option, the commit ID is transmitted in another branch. <br>
+                <a href="https://git-scm.com/docs/git-cherry-pick" target="_blank"> git-cherry-pick - Apply the changes introduced by some existing commits</a>
+                </li>
+                <li>
+                    <b> git reset</b> will take your branch back to a certain point in the commit history, but there are 3 different levels to this: soft, hard, mixed. <br>
+                    <a href="https://dev.to/char_bone/how-and-when-to-use-git-reset-2om6" target="_blank"> How and when to use git reset</a>
+                </li>
+                <li> <b> git rebase </b> combines changes made in one branch with the other branch, but it rewrites history, because it transfers completed work. <br>
+                    <a href="https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---rebase-mergesrebase-cousinsno-rebase-cousins" target="_blank">git-rebase - Reapply commits on top of another base tip</a>
+                </li>
+                <li>
+                    <b>git stash</b> can help you to (temporarily but safely) store your uncommitted local changes - and leave you with a
+                    clean working copy. <br>
+                    <a href="https://www.git-tower.com/learn/git/faq/save-changes-with-git-stash" target="_blank"> How to save your changes temporarily</a>
+                </li>
+            </ul>
+        </p>
+      </div>
+      <!--about gitignor-->
+      <div>
+          <h3>How to use a .gitignore file and what is it</h3>
+          <p> We use a .gitignore file if there are some files that we never want commit. It lets Git know that it should ignore certain files and not track them. </p>
+          <p> Here's how it works. A .gitignore file is a plain text file where each line contains a pattern for files/directories to
+            ignore. Generally, this is placed in the root folder of the repository. However, you can
+            put it in any folder in the repository and you can also have multiple .gitignore files. You can also create a global .gitignore file and any entries in that file will be ignored in all of your Git
+            repositories.</p>
+          <p>
+              <h2>Wildcard</h2>
+              <ul>
+                  <li>* - matches 0 or more characters (except the /). So, for example, *.log matches any file ending with the .log extension.
+                </li>
+                <li>! - as a prefix to negate a file that would be ignored, for example, "!example.log"</li>
+                <li>*~ - matches any file ending with ~, such as "index.html~"</li>
+              </ul>
+          </p> 
+      </div>
     </div>
   </body>
 </html>

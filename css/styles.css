@@ -1,11 +1,18 @@
 body {
   background-color: blanchedalmond;
 }
+body img {
+  display: list-item;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100% !important;
+  min-width: 1px !important;
+  text-align: center;
+}
 .commands {
 }
 .main {
   background-color: cornsilk;
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
 }
