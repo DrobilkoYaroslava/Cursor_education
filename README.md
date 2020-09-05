@@ -1,5 +1,4 @@
-Homework #1
-"VCS (Git, Github, gh-pages)
+Front-End Education (Basic)
+Homeworks:
 
-Створити локальний репозиторій, додати index.html сторінку, закомітати. Створити віддалений репозиторій на github, підключити локальний до віддаленого і налаштувати github pages.
-Додати в цю html сторiнку шпаргалку за командами гита.
+1.HW_1_Git - "VCS (Git, Github, gh-pages)"
