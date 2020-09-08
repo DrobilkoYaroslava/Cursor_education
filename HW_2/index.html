@@ -11,6 +11,7 @@
       <h2>"Поняття Front-End. HTML"</h2>
       <h3><i>written by Yaroslava Drobilko</i></h3>
     </header>
+    <div>
     <table>
       <thead>
         <tr>
@@ -47,5 +48,44 @@
         </tr>
       </tbody>
     </table>
+</div>
+    <form>
+      <h3>Форма зворотнього зв'язку</h3>
+      <div>
+      <h4>ПІБ:</h4>
+      <input type="text" placeholder="введіть ваше Ім'я" />
+      <input type="text" placeholder="введіть ваше Прізвище" />
+      <select>
+        <option disabled>Оберіть місто</option>
+        <option>Київ</option>
+        <option>Львів</option>
+        <option>Одеса</option>
+        <option>Харків</option>
+        <option>Чернігів</option>
+    </select>
+      <h4>Оберіть вашу стать</h4>
+      <label>
+          <input type="radio" name="gender" value="чоловік" checked /> чол.
+      </label>
+      <label>
+          <input type="radio" name="gender" value="жінка" /> жін. 
+      </label>
+      <h4>Напишіть нам</h4>
+        <textarea name="text" rows="5" cols="25" placeholder="введіть ваше запитання"></textarea>
+      <h4>Якою мовою ми можемо відправити Вам відповідь?</h4>
+      <label>
+      <input type="checkbox" name="language" value="ukr"> Українська   
+      </label>
+      <label>
+        <input type="checkbox" name="language" value="rus"> Русский
+      </label>
+      <label>
+        <input type="checkbox" name="language" value="eng"> English
+      </label>
+      <div>
+      <button> <img src="https://img.icons8.com/fluent/20/000000/check-all.png"/>Відправити</button>
+      </div>
+    </div>
+    </form>
   </body>
 </html>
