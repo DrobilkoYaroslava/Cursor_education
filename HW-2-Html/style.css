@@ -5,6 +5,8 @@
 body {
     background-image: url(img/background-2633962.jpg);
     font-family: 'Comfortaa', cursive;
+    min-width: 1000px;
+    
 }
 .main {
     max-width: 1000px;
