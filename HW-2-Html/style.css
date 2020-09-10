@@ -81,9 +81,9 @@ form h4 {
     margin: 10px;
 }
 select {
-    width: 100px;
+    width: 150px;
     height: 40px;
-    padding-left: 20px;
+    padding-left: 10px;
     margin: 10px;
     background: #cfccfc;
     color: #000000;
