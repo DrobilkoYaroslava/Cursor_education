@@ -15,7 +15,6 @@
       <h2>"Поняття Front-End. HTML"</h2>
       <h3><i>by Yaroslava Drobilko</i></h3>
     </header>
-    <div>
     <table>
       <thead>
         <tr>
@@ -52,45 +51,41 @@
         </tr>
       </tbody>
     </table>
-</div>
-    <form>
-      <h3>Форма зворотнього зв'язку</h3>
-      <div>
+   <div class="form">
+    <form action="#">
+      <h2>Форма зворотнього зв'язку</h2>
       <h4>ПІБ:</h4>
-      <input type="text" placeholder="введіть ваше Ім'я" />
-      <input type="text" placeholder="введіть ваше Прізвище" />
-      <select>
+      <input class="input-text" type="text" name="name" placeholder="введіть ваше Ім'я" /> <br>
+      <input class="input-text" type="text" name="surname" placeholder="введіть ваше Прізвище" /> <br>
+      <select name="city" size="1">
         <option disabled>Оберіть місто</option>
-        <option>Київ</option>
-        <option>Львів</option>
-        <option>Одеса</option>
-        <option>Харків</option>
-        <option>Чернігів</option>
-    </select>
+        <option value="Kyiv">Київ</option>
+        <option value="Lviv">Львів</option>
+        <option value="Odesa">Одеса</option>
+        <option value="Kharkiv">Харків</option>
+        <option value="Chernigiv">Чернігів</option>
+      </select>
       <h4>Оберіть вашу стать</h4>
-      <label>
-          <input type="radio" name="gender" value="чоловік" checked /> чол.
-      </label>
-      <label>
-          <input type="radio" name="gender" value="жінка" /> жін. 
-      </label>
+        <input type="radio" name="sex" value="male" id="sex1" checked /> 
+        <label for="sex1">чол.</label> 
+        <input type="radio" name="sex" value="female" id="sex2"/> 
+        <label for="sex2">жін.</label> 
       <h4>Напишіть нам</h4>
         <textarea name="text" rows="5" cols="25" placeholder="введіть ваше запитання"></textarea>
-      <h4>Якою мовою ми можемо відправити Вам відповідь?</h4>
-      <label>
-      <input type="checkbox" name="language" value="ukr"> Українська   
-      </label>
-      <label>
-        <input type="checkbox" name="language" value="rus"> Русский
-      </label>
-      <label>
-        <input type="checkbox" name="language" value="eng"> English
-      </label>
-      <div>
-      <button> <img src="https://img.icons8.com/fluent/20/000000/check-all.png"/>Відправити</button>
-      </div>
+      <div class="checkbox">
+        <h4>Якою мовою Ви бажаєте отримати відповідь?</h4>
+        <input type="checkbox" name="language" value="ukr" id="ukr">
+        <label for="ukr">Українська</label>
+        <input type="checkbox" name="language" value="rus" id="rus"> 
+        <label for="rus">Русский</label>
+        <input type="checkbox" name="language" value="eng" id="eng"> 
+        <label for="eng">English</label>
     </div>
+      <div class="button">
+      <button type="submit">Відправити</button>
+      </div>
     </form>
-  </div>
+    </div>
+    </div>
   </body>
 </html>
