@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico"/>
     <title>HW-3-CSS</title>
 </head>
 <body>
+    <div>
     <table>
         <thead>
             <tr>
-                <th>Name</th>
+                <th>Name <span class="triangle">&#9660;</span></th>
                 <th>Date</th>
                 <th></th>
             </tr>
@@ -19,71 +21,83 @@
             <tr>
                 <td>File.pdf</td>
                 <td>3 mins ago</td>
-                <td></td>
+                <td><span class="dots">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
                 <td>File.pdf</td>
                 <td>Yesterday</td>
-                <td></td>
+                <td><span class="dots">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
                 <td>File.pdf</td>
                 <td>June 1st, 2019</td>
-                <td></td>
+                <td><span class="dots">&#8226;&#8226;&#8226;</span></td>
             </tr>
         </tbody>
     </table>
+</div>
+<div>
     <table>
         <thead>
             <tr>
-                <th>Name</th>
+                <th><input type="checkbox" name="name" value="name" id="name">
+                    <label for="name"> Name <span class="triangle">&#9660;</span></label></th>
                 <th>Date</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>File.pdf</td>
+                <td><input type="checkbox" name="file" value="file1" id="file1">
+                    <label for="file1">File.pdf</label></td>
                 <td>3 mins ago</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
-                <td>File.pdf</td>
+                <td><input type="checkbox" name="file" value="file2" id="file2" checked>
+                    <label for="file2">File.pdf</label></td>
                 <td>Yesterday</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
-                <td>File.pdf</td>
+                <td><input type="checkbox" name="file" value="file3" id="file3">
+                    <label for="file3">File.pdf</label></td>
                 <td>June 1st, 2019</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
         </tbody>
     </table>
+</div>
+<div>
     <table>
         <thead>
             <tr>
-                <th>Name</th>
+                <th>Name <span class="triangle">&#9660;</span></th>
                 <th>Date</th>
-                <th></th>
+                <th><form class="search" action="/search/">
+                    <input type="search" name="text" placeholder="Search">
+                  </form>
+                </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>File.pdf</td>
+                <td><span class="icon-box"></span>File.pdf</td>
                 <td>3 mins ago</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
-                <td>File.pdf</td>
+                <td><span class="icon-box"></span>File.pdf</td>
                 <td>Yesterday</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
             <tr>
-                <td>File.pdf</td>
+                <td><span class="icon-box"></span>File.pdf</td>
                 <td>June 1st, 2019</td>
-                <td></td>
+                <td><span class="dots2">&#8226;&#8226;&#8226;</span></td>
             </tr>
         </tbody>
     </table>
+</div>
 </body>
 </html>
