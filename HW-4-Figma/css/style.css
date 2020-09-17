@@ -1,0 +1,130 @@
+body {
+    background-image: url(../img/Bg@3x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;    
+}
+.wrapper {
+    width: 100%;
+    height: 782px;
+    font-family: inherit;
+}
+.navbar { 
+    max-height: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-top: 17px;          
+}
+
+.logo-container {
+    width: 172px;
+    height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 165px;
+    margin-right: 160px; 
+}
+.menu {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menu li {
+    list-style-type: none;
+    float: left;
+    
+}
+.menu-link {
+    font-size: 0.875em;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 17px;
+    padding: 15px;    
+}
+.lang-nav {
+    display: flex;
+    justify-content: center;
+    width: 96px;
+    height: 32px;
+    margin: auto 10px;
+}
+.lang-select {
+    width: 100%;
+    height: 22px;
+    font-size: 14px; 
+    font-family: inherit; 
+    font-weight: normal; 
+    color: #ffffff;
+    padding-left: 20px;
+    border: none;
+    appearance: none;
+    background: none; 
+    background-image: url(../img/Vector.png); 
+    background-repeat: no-repeat;
+    background-position: right 2px top 60%, 0 0;
+    background-size: 16px auto, 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+}
+.icon-flag {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sign-up-form {
+    width: 100px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 165px;
+}
+.button-log {
+ 
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    background: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+   
+ 
+}
+.main {
+    margin: auto;
+    margin-top: 170px;
+    text-align: center;
+    width: 600px;
+}
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 82px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.promotion {
+    font-size: 24px;
+    line-height: 150%;
+    margin: 39px auto;
+    letter-spacing: 0.04em;
+}
+.sing-up-button {
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 17px 28px;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    color: #ED4C5C;
+}
