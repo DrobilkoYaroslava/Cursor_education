@@ -12,7 +12,6 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding-top: 94px;
 }
 .title {
@@ -24,9 +23,6 @@ body {
 }
 .left-column {
     width: 445px;
-}
-.right-column {
-    padding-bottom: 25px;
 }
 .container-description {
     font-style: normal;
@@ -62,7 +58,6 @@ body {
 } 
 .contact-form {
     width: 564px;
-    height: 332.45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -108,7 +103,6 @@ body {
     margin-left: 10px;
 
 }
-
 .input-name {
     width: 564px;
     display: flex;    
@@ -121,7 +115,7 @@ body {
     width: 100%;
     margin: 0 0;
     padding-bottom: 20px;
-    }
+}
 .footer-container {
     background-color: #fafafa;
     width: 100%;
@@ -167,7 +161,6 @@ body {
     font-size: 12px;
     margin-bottom: 15px;
     color: #101010;
-
 }
 .social-network-nav li {
     list-style-type: none;
@@ -179,7 +172,6 @@ body {
     width: 66px;
     height: 14px;
     margin: 10px 0;
-
 }
 .copyright {
     font-weight: normal;
