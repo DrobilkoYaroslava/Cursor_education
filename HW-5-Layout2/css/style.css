@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-}
+ }
 .header-container {
     background-color: #ED4C5C;
     color: #ffffff;
@@ -81,7 +81,7 @@ body {
 #select {
     width: 544px;
     appearance: none;
-    background-image: url(../IMG/ChevronDown\(E70D\).png); 
+    background-image: url(../img/ChevronDown\(E70D\).png); 
     background-repeat: no-repeat;
     background-position: right 25px top 50%, 0 0;
     background-size: 16px auto, 100%;
