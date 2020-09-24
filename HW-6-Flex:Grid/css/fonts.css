@@ -26,3 +26,10 @@
 	font-weight: 500;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Conv_AvenirNextLTPro-DemiCn';
+	src: url('../fonts/AvenirNextLTPro-DemiCn.eot');
+	src: local('☺'), url('../fonts/AvenirNextLTPro-DemiCn.woff') format('woff'), url('../fonts/AvenirNextLTPro-DemiCn.ttf') format('truetype'), url('../fonts/AvenirNextLTPro-DemiCn.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
