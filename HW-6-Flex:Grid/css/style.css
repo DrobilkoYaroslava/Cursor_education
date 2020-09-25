@@ -70,6 +70,11 @@ body {
     margin: 0 auto;
     margin-bottom: 30px;
 }
+.data-store-position {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
 .data-store-heading {
     width: 645px;
     height: 184px;
@@ -104,17 +109,7 @@ body {
     margin-top: 20px;
     outline: none;
 }
-.data-store-img {
-    max-width: 885px;
-    width: ;
-    height: 468px;
-    display: block;
-    position: absolute;
-    bottom: 150px;
-    right: 15%;
-}
 .info {
-    /* margin: auto; */
     width: 1117px;
     height: 561px;
     border-radius: 50px;
@@ -391,3 +386,4 @@ body {
     cursor: pointer;
     margin-top: 1em; 
 }
+
