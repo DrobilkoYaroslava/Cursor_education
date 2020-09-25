@@ -7,8 +7,10 @@ Homeworks:
 
 3.HW-3-CSS - "Технологія CSS (Cascading Style Sheet)"  
 
-4.HW-4-Layout#1 - "Графічні редактори для розробників"  
+4.HW-4-Layout1 - "Графічні редактори для розробників"  
 
-5.HW-5-Layout#2 - "Блочна верстка"
+5.HW-5-Layout2 - "Блочна верстка"
 
-6.HW-6-Flex/Grid -"Flex/Grid"
+6.HW-6-Flex-Grid - "Flex/Grid"
+
+7.HW-7 - "Псевдокласи"
