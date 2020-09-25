@@ -10,3 +10,5 @@ Homeworks:
 4.HW-4-Layout#1 - "Графічні редактори для розробників"  
 
 5.HW-5-Layout#2 - "Блочна верстка"
+
+6.HW-6-Flex/Grid -"Flex/Grid"
