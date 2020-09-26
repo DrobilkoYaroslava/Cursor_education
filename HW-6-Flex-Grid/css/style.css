@@ -66,7 +66,7 @@ body {
 }
 .data-store-position {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 320px 1fr;
     align-items: center;
 }
 .data-store-heading {
