@@ -14,3 +14,4 @@ Homeworks:
 6.HW-6-Flex-Grid - "Flex/Grid"
 
 7.HW-7 - "Псевдокласи"
+8.HW-8 - "HTML5, CSS3"

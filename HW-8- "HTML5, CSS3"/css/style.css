@@ -16,8 +16,8 @@ a {
 }
 .content {
     width: 1440px;
-        margin: 31px auto;
-      min-height: 100%;
+    margin: 31px auto;
+    min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 13rem 1fr;
@@ -25,13 +25,12 @@ a {
     grid-template-areas: 
      "sidebar header" 
      "sidebar main";
-
 }
 h1 {
     height: fit-content;
     font-family: "Baloo Bhai";
-font-size: 64px;
-font-weight: 400;
+    font-size: 64px;
+    font-weight: 400;
 }
 .sidebar {
     grid-area: sidebar;
@@ -45,8 +44,6 @@ font-weight: 400;
     grid-template: 20% 60% 20% / 100%;
     justify-items: center;
     align-items: center;
-
-
 }
 .side-nav li {
     padding-bottom: 63px;
@@ -58,7 +55,6 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 5rem;
-   
 }
 .hello {
     width: 621px;
@@ -119,17 +115,13 @@ line-height: 1.7em;
     cursor: pointer;
     padding: 15px;
     outline: none;
-  
+ 
 }
 
 .notification {
     display: grid;
         grid-template: 1fr / 5rem 1fr;
     justify-items: center;
-}
-.bell {
-}
-.prof-photo {
 }
 .completed {
     width: 209px;
@@ -277,13 +269,6 @@ margin-bottom: 15px;
 .clock, .flame {
     margin-right: 0.7rem;
 }
-
-.course-time, mark {
-
-}
-.mark {
-}
-
 .schedule-select {
     width: fit-content;
     position: relative;
