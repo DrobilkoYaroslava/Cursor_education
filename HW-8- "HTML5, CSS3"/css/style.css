@@ -1,0 +1,357 @@
+
+body {
+    min-width: 1100px;
+    min-height: 600px;
+    background-color: #fff;
+    color: #000;
+    padding: 24px 32px;
+   }
+div {
+    display: grid;
+    height: fit-content;
+
+}
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1440px;
+        margin: 31px auto;
+      min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13rem 1fr;
+    column-gap: 5rem;
+    grid-template-areas: 
+     "sidebar header" 
+     "sidebar main";
+
+}
+h1 {
+    height: fit-content;
+    font-family: "Baloo Bhai";
+font-size: 64px;
+font-weight: 400;
+}
+.sidebar {
+    grid-area: sidebar;
+    width: 133px;
+    height: 852px;
+    border-radius: 24px;
+    background-color: #000000;
+    box-shadow: 25px 0px 36px 0px rgba(0,0,0,0.42);
+    color: #fff;
+    display: grid;
+    grid-template: 20% 60% 20% / 100%;
+    justify-items: center;
+    align-items: center;
+
+
+}
+.side-nav li {
+    padding-bottom: 63px;
+}
+header {
+    height: 10rem;
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+   
+}
+.hello {
+    width: 621px;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   justify-items: center;  
+   align-items: center;
+}
+h2 {
+    font-family: "Baloo Bhai";
+font-size: 36px;
+font-weight: 400;
+width: fit-content;
+}
+.box-style {
+    border-radius: 14px;
+    background-color: #f5f5f7;
+}
+.info-text {
+    color: #000;
+    font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 1.7em;
+}
+.header-boy {
+    position: relative;
+    bottom: 2em;
+}
+.prof-nav-container {
+    width: 621px;
+}
+.profile-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 4rem;
+    justify-items: start;
+    align-items: start;
+}
+.course-progress {
+    display: grid;
+    grid-template: 1fr / 15rem 1fr;
+}
+.subgrid-course-progress {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   justify-items: center;
+    align-items: center;
+  }
+.search {
+    border-radius: 8px;
+    border: none;
+    width: 17rem;
+    background: url(../img/loupe.png) 15px center no-repeat, #F5F5F7;
+    cursor: pointer;
+    padding: 15px;
+    outline: none;
+  
+}
+
+.notification {
+    display: grid;
+        grid-template: 1fr / 5rem 1fr;
+    justify-items: center;
+}
+.bell {
+}
+.prof-photo {
+}
+.completed {
+    width: 209px;
+    height: 98px;
+}
+.prof-nav-heading {
+    color: #000;
+    font-family: "Baloo Bhai";
+font-size: 64px;
+font-weight: 400;
+}
+.in-progress {
+    width: 209px;
+    height: 98px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 3em;
+}
+.left-column h3{
+    margin-top: 30px;
+}
+.slider {
+    width: 620px;
+    height: 81px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 82% 9% 9%;
+    justify-items: end;
+    align-items: center;
+}
+.present-course {
+    width: 501px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    padding-left: 8px;
+  
+}
+.course-heading {
+    width: fit-content;
+    font-family: "Baloo Bhai";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.author-progress-info {
+    font-family: "Roboto";
+font-size: 13px;
+font-weight: 400;
+line-height: 15px;
+
+}
+.rate {
+    position: relative;
+    top: 1.3rem;
+    left: 1.5rem;
+    font-family: "Roboto";
+font-size: 13px;
+font-weight: 400;
+}
+.rate-circle {
+    position: relative;
+    bottom: 0.3rem;
+    left: 1rem;
+}
+.btn {
+    width: 121px;
+    height: 41px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000; 
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin: 0 24px 0 0;
+
+}
+h3 {
+    font-family: "Baloo Bhai";
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 15px;
+}
+.tabs { 
+    width: 100%; 
+    padding: 0px; 
+    margin: 0 auto; 
+    display: inline-block;
+    
+}
+.tabs > input { 
+    display: none; 
+}
+
+
+.tabs > div {
+    display: none;
+    border: none;
+}
+.tabs > label {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    opacity: 0.3;
+    font-family: "Baloo Bhai";
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.tabs > input:checked + label{
+    color: #000000;
+    opacity: 1;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4 { 
+    display: block; 
+}
+
+.course-item {
+    width: 620px;
+    height: 81px;
+    display: grid;
+    grid-template-columns: 15% 25% 20% 15% 25%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.course-item:first-child{
+    margin-top: 15px;
+}
+.clock, .flame {
+    margin-right: 0.7rem;
+}
+
+.course-time, mark {
+
+}
+.mark {
+}
+
+.schedule-select {
+    width: fit-content;
+    position: relative;
+    top: 1.8rem;
+    left: 22rem;
+}
+.schedule-time {
+    width: 89px;
+    height: 33px;
+    background: #F5F5F7;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 0px 12px;
+ 
+}
+.schedule-box {
+    width: 70%; 
+    padding: 0px; 
+    display: inline-block;
+        
+}
+.schedule-box > input { 
+    display: none; 
+}
+      
+.schedule-box > div {
+    display: none;
+    border: none;
+}
+.schedule-box > label {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    opacity: 0.3;
+    font-family: "Baloo Bhai";
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+    
+.schedule-box > input:checked + label{
+    color: #000000;
+    opacity: 1;
+}
+#tab-schedule_1:checked ~ #text_1,
+#tab-schedule_2:checked ~ #text_2 {
+    display: block; 
+    margin-top: 15px;
+}
+.schedule-pic {
+    width: 100%;
+    margin-top: 29px;
+}
+.learn-more {
+    width: 70%;
+    display: grid;
+    grid-template: 1fr / 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding: 24px 0px 15px 20px;
+    margin-top: 45px;
+}
+.learn-more p {
+    margin-bottom: 24px;
+}

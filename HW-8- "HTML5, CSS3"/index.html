@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW 8 - HTML5,CSS3</title>
+</head>
+<body>
+    <div class="content">
+        <aside class="sidebar">
+            <h1>F.</h1>
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/home.png" alt="house">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/educ.png" alt="hat">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/person.png" alt="man">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/letter.png" alt="letter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/settings.png" alt="settings">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#"><img src="img/exit.png" alt="exit"></a>
+            </div>
+        </aside>
+        <header>
+            <div class="hello box-style">
+                <div>
+                <h2>Hello Josh!</h2>
+                <p class="info-text">It’s good to see you again.</p>
+                </div>
+                <div>
+                <img src="img/boy.png" alt="boy`s waiving his hand" class="header-boy">
+                </div>
+            </div>
+            <div class="prof-nav-container">
+            <div class="profile-nav">
+                <div>
+                    <label for="search-form">
+                        <input type="text" class="search box-style" placeholder="" id="search-form">
+                    </label>
+                </div>
+                <div class="notification">
+                    <a href="#" >
+                        <img src="img/bell.png" alt="bell" class="bell">
+                    </a>
+                    <a href="#">
+                        <img src="img/prof-photo.png" alt="user-photo" class="prof-photo">
+                    </a>
+                </div>
+            </div>
+            <div class="course-progress ">
+                <div class="completed box-style subgrid-course-progress">
+                    <h2 class="prof-nav-heading">11</h2>
+                    <p class="info-text">Courses
+                        completed</p>
+                </div>
+                <div class="in-progress box-style subgrid-course-progress" >
+                    <h2 class="prof-nav-heading">4</h2>
+                    <p class="info-text">Courses
+                        in progress</p>
+                </div>
+            </div>
+            </div>
+        </header>
+        <main>
+            <div class="left-column">
+                <div class="slider">
+                    <div class="present-course box-style">
+                        <div>
+                            <img src="img/spanish.png" alt="spanish-flag">
+                        </div>
+                        <div>
+                        <h4 class="course-heading"> Spanish B2</h4>
+                        <p class="author-progress-info">by Alejandro Velazquez</p>
+                        </div>
+                        <div >
+                            <p class="rate">83%</p>
+                            <img src="img/Ellipse_1.png" alt="circle" class="rate-circle">
+                        </div>
+                        <button class="btn">Continue</button>
+                    </div>
+                    <img src="img/arr-left.png" alt="arrow-left">
+                    <img src="img/arr-right.png" alt="arrow-right">
+                </div>
+                <h3>Courses</h3>
+                <div class="tabs">
+                    <input type="radio" name="inset" value="" id="tab_1" checked >
+                    <label for="tab_1" class="course-heading">All Courses</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_2">
+                    <label for="tab_2" class="course-heading">The Newest</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_3">
+                    <label for="tab_3" class="course-heading">Top Rated</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_4">
+                    <label for="tab_4" class="course-heading">Most Popular</label>
+                
+                    <div id="txt_1">
+                        <div class="course-item box-style">
+                            <img src="img/figma.png" alt="figma-icon">
+                            <div>
+                            <h4 class="course-heading">Learn Figma</h4>
+                            <p class="author-progress-info">by Christopher Morgan</p>
+                            </div>
+                            <div class="course-time">
+                                
+                                <p class="author-progress-info"><img src="img/time.png" alt="clock" class="clock">6h 30min</p>
+                            </div>
+                            <div class="mark">
+                                
+                                <p class="author-progress-info"><img src="img/flame_1.png" alt="flame" class="flame">4,9</p>
+                            </div>
+                            <button class="btn">View course</button>
+                        </div>
+                        <div class="course-item box-style">
+                            <img src="img/analog-photo.png" alt="analog-icon">
+                            <div>
+                            <h4 class="course-heading">Analog photography</h4>
+                            <p class="author-progress-info">by Gordon Norman</p>
+                            </div>
+                            <div class="course-time">
+                                
+                                <p class="author-progress-info"><img src="img/time.png" alt="clock" class="clock">3h 15min</p>
+                            </div>
+                            <div class="mark">
+                                
+                                <p class="author-progress-info"><img src="img/flame_1.png" alt="flame"class="flame">4,7</p>
+                            </div>
+                            <button class="btn">View course</button>
+                        </div>
+                        <div class="course-item box-style">
+                            <img src="img/insta.png" alt="instagram-icon">
+                            <div>
+                            <h4 class="course-heading">Master Instagram</h4>
+                            <p class="author-progress-info">by Sophie Gill</p>
+                            </div>
+                            <div class="course-time">
+                                
+                                <p class="author-progress-info"><img src="img/time.png" alt="clock" class="clock">7h 40min</p>
+                            </div>
+                            <div class="mark">
+                                
+                                <p class="author-progress-info"><img src="img/flame_1.png" alt="flame" class="flame">4,6</p>
+                            </div>
+                            <button class="btn">View course</button>
+                        </div>
+                        <div class="course-item box-style">
+                            <img src="img/pencil.png" alt="pencil">
+                            <div>
+                            <h4 class="course-heading">Basics of drawing</h4>
+                            <p class="author-progress-info">by Jean Tate</p>
+                            </div>
+                            <div class="course-time">
+                                
+                                <p class="author-progress-info"><img src="img/time.png" alt="clock" class="clock">11h 30min</p>
+                            </div>
+                            <div class="mark">
+                                
+                                <p class="author-progress-info"><img src="img/flame_1.png" alt="flame" class="flame">4,8</p>
+                            </div>
+                            <button class="btn">View course</button>
+                        </div>
+                        <div class="course-item box-style">
+                            <img src="img/photoshop.png" alt="ps-icon">
+                            <div>
+                            <h4 class="course-heading">Photoshop - Essence</h4>
+                            <p class="author-progress-info">by David Green</p>
+                            </div>
+                            <div class="course-time">
+                                
+                                <p class="author-progress-info"> <img src="img/time.png" alt="clock" class="clock">5h 35min</p>
+                            </div>
+                            <div class="mark">
+                                
+                                <p class="author-progress-info"><img src="img/flame_1.png" alt="flame" class="flame">4,7</p>
+                            </div>
+                            <button class="btn">View course</button>
+                        </div>
+                    </div>
+                    <div id="txt_2">
+                        <p>In progress</p>
+                    </div>
+                    <div id="txt_3">
+                        <p>In progress</p>
+                    </div>
+                    <div id="txt_4">
+                        <p>In progress</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <h3>Your statistics</h3>
+                <div class="schedule-select">
+                    <select name="schedule" id="schedule" class="schedule-time">
+                        <option value="week" selected>Weekly</option>
+                        <option value="month">Monthly</option>
+                    </select>
+                </div> 
+                <div class="schedule-box">
+                    <input type="radio" name="inset-schedule" value="" id="tab-schedule_1" checked>
+                    <label for="tab-schedule_1" class="course-heading">Learning Hours</label>
+                
+                    <input type="radio" name="inset-schedule" value="" id="tab-schedule_2">
+                    <label for="tab-schedule_2" class="course-heading">My Courses</label>
+                    <div id="text_1">
+                        <img src="img/schedule.png" alt="schedule" class="schedule-pic">
+                    </div>
+                    <div id="text_2">
+                        <p>In progress</p>
+                    </div>
+                </div>
+                <div class="learn-more box-style">
+                    <div>
+                    <h3>Learn even more!</h3>
+                    <p class="info-text">
+                        Unlock premium features
+                        only for $9.99 per month. 
+                    </p>
+                    <button class="btn">Go Premium</button>
+                    </div>
+                    <img src="img/brain.png" alt="brain and book">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
