@@ -1,0 +1,436 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background: url(../img/phones.png) #f4f6f9 no-repeat right top;
+    padding-top: 65px;
+    padding-bottom: 165px;
+    padding-left: 163px;
+}
+
+.header-heading {
+    color: #333333;
+    font-family: "Lato";
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    line-height: 46.41px;
+    max-width: 546px;
+    margin-top: 133px;
+}
+
+.header-text {
+    max-width: 453px;
+    color: #4f4f4f;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.31px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.apps {
+    max-width: 348px;
+    display: flex;
+    justify-content: space-between;
+}
+.what-it-does {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    background-image:  linear-gradient(270deg, #FFFFFF 45.16%, rgba(255, 255, 255, 0.5) 97.14%, rgba(255, 255, 255, 0.5)), url(../img/back-players.png);
+    background-repeat: no-repeat;
+
+}
+.match {
+    margin-left: 163px;
+    margin-top: 101px;
+    margin-bottom: 77px;
+}
+.match-info {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+
+}
+.match-notification {
+    width: 360px;
+    height: 219px;
+    background: #FFFFFF;
+    box-shadow: -22px 24px 49px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.match-time {
+    color: #4f4f4f;
+    font-family: "Lato";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21.63px;
+    margin-top: 27px;
+    margin-bottom: 13px;
+}
+
+.match-commands {
+    width: 78px;
+    color: #000000;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.2px;
+    margin-bottom: 12px;
+
+}
+
+.match-description {
+    color: #000000;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.63px;
+}
+.match-time, .match-commands, .match-description {
+    padding-left: 15px;
+}
+.badges {
+    position: relative;
+    bottom: 5rem;
+    left: 12rem;
+    width: fit-content;
+}
+.badges #chelsea {
+    position: relative;
+    right: 1em;
+}
+
+.match-turn-on {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 51px;
+    color: #4f4f4f;
+    font-family: "Lato";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.34px;
+    background-color: #eeeeee;
+    border-radius: 0px 0px 4px 4px; 
+}
+
+input.switch {
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 27px;
+    height: 13px;
+    background-color: #979797;
+   border-radius: 50px;
+}
+  
+input.switch:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -7px;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+  
+input.switch:checked {
+    background-color: #000000;
+  }
+  
+input.switch:checked:after {
+    left: 10px;
+}
+
+.video {
+    position: relative;
+    bottom: 2rem;
+    right: -6.5rem;   
+}
+.video img {
+    box-shadow: -22px 24px 49px rgba(0, 0, 0, 0.4);
+}
+.what-it-does-text {
+    margin-top: 133px;
+    position: relative;
+    right: 7rem;
+}
+.short-heading {
+    width: fit-content;
+    color: #00adee;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.63px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+.long-heading {
+    color: #333333;
+    font-family: "Lato";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.09px;
+    margin-bottom: 27px;
+}
+.text {
+    width: 407px;
+    height: 185px;
+    color: #4f4f4f;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.5px;
+    margin-bottom: 20px;
+}
+.text p:first-child {
+    margin-bottom: 20px;
+}
+.learn-more a {
+    text-decoration: none;
+    color: #00adee;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.63px;
+}
+
+.get-started {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/back2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.get-started-text {
+    margin-top: 217px;
+    margin-bottom: 171px;
+    margin-left: 162px;
+    max-width: 480px;
+}
+
+.phone-with-player {
+    margin-top: 104px;
+    margin-bottom: 99px;
+    margin-right: 250px;
+    position: relative;
+}
+
+.bell-notification {
+    position: absolute;
+    top: 56px;
+    left: 11px;
+}
+.phone-arrow-notification {
+    position: absolute;
+    bottom: 7.5rem;
+    left: 16.2rem;
+}
+.features {
+    background: #2370ff;
+    background-image: url(../img/backgr3.png);
+    background-repeat: no-repeat;
+}
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3rem;
+    margin: 0 163px;
+}
+.features-heading {
+    width: fit-content;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.09px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 76px 0 54px;
+}
+.features-text {
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.5px;
+}
+.features-container div:nth-child(n+7) {
+    padding-bottom: 66px;
+}
+.bull {
+    content: "\2022";
+}
+.users-say  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.users-say-heading {
+    color: #333333;
+    font-family: "Lato";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.09px;
+    margin: 62px auto;
+}
+.users-reviews {
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 309px);
+    column-gap: 36px;
+    margin-bottom: 47px;
+    overflow: hidden;
+}
+.user-review-text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 18px;
+    max-width: 279px;
+    color: #4F4F4F;
+}
+.user-review-item {
+    width: 309px;
+    height: 161px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 17px;
+    padding-top: 15px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    position: relative;
+}
+.author-name {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 19px;
+    color: #333333;
+    margin-left: 11px;
+}
+.author-name a {
+    position: absolute;
+    right: 10%;
+}
+.arrow-left {
+    position: absolute; 
+    top: 200px;
+    left: 95px;
+    cursor: pointer;
+}
+.arrow-right {
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    cursor: pointer;
+}
+.users-reviews::before,
+.users-reviews::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    background: linear-gradient(270deg, #FFFFFF 0.84%, rgba(255, 255, 255, 0) 10.7%);
+    border-radius: 4px;
+}
+.users-reviews::before {
+    content: '';
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+}
+.we-featured-in{
+    background: #FAFAFA;
+    margin-top: 3rem;
+}
+.we-featured-in-heading{
+    color: #333333;
+    font-family: "Lato";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.09px;
+    padding: 60px 0;
+    text-align: center;
+}
+.companies{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    margin: 0 8rem;
+}
+.get-up-close {
+    height: 30rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/back-get-up.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.get-up-content {
+    width: 38%;
+    position: relative;
+    right: 7rem;
+}
+.get-up-heading {
+    color: #333333;
+    font-family: "Lato";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.09px;
+    padding-bottom: 35px;
+}
+.get-up-text {
+    color: #4f4f4f;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.38px;
+    padding-bottom: 38px;
+}
+footer {
+    background-color: #00adee;
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.63px;
+    display: flex;
+    padding: 51px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-nav li, .social-networks li {
+    list-style-type: none;
+    float: left;
+}
+.footer-nav a {
+    text-decoration: none;
+    padding-right: 37px;
+}
+.social-networks a{
+    padding-right: 17px;
+}
