@@ -203,7 +203,7 @@ input.switch:checked:after {
 .get-started-text {
     margin-top: 217px;
     margin-bottom: 171px;
-    margin-left: 162px;
+    margin-left: 8%;
     max-width: 480px;
 }
 
