@@ -10,7 +10,9 @@ header {
     padding-bottom: 165px;
     padding-left: 163px;
 }
-
+main {
+    width: 100%;
+}
 .header-heading {
     color: #333333;
     font-family: "Lato";
@@ -21,7 +23,6 @@ header {
     max-width: 546px;
     margin-top: 133px;
 }
-
 .header-text {
     max-width: 453px;
     color: #4f4f4f;
@@ -32,7 +33,6 @@ header {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
 .apps {
     max-width: 348px;
     display: flex;
@@ -44,7 +44,6 @@ header {
     background-color: rgb(255, 255, 255);
     background-image:  linear-gradient(270deg, #FFFFFF 45.16%, rgba(255, 255, 255, 0.5) 97.14%, rgba(255, 255, 255, 0.5)), url(../img/back-players.png);
     background-repeat: no-repeat;
-
 }
 .match {
     margin-left: 163px;
@@ -55,18 +54,16 @@ header {
     display: flex;
     flex-direction: column;
     height: 180px;
-
 }
 .match-notification {
-    width: 360px;
-    height: 219px;
+    max-width: 360px;
+    max-height: 219px;
     background: #FFFFFF;
     box-shadow: -22px 24px 49px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     position: relative;
     z-index: 2;
 }
-
 .match-time {
     color: #4f4f4f;
     font-family: "Lato";
@@ -76,7 +73,6 @@ header {
     margin-top: 27px;
     margin-bottom: 13px;
 }
-
 .match-commands {
     width: 78px;
     color: #000000;
@@ -85,9 +81,7 @@ header {
     font-weight: 500;
     line-height: 23.2px;
     margin-bottom: 12px;
-
 }
-
 .match-description {
     color: #000000;
     font-family: "Lato";
@@ -108,7 +102,6 @@ header {
     position: relative;
     right: 1em;
 }
-
 .match-turn-on {
     display: flex;
     justify-content: space-around;
@@ -122,7 +115,6 @@ header {
     background-color: #eeeeee;
     border-radius: 0px 0px 4px 4px; 
 }
-
 input.switch {
     position: relative;
     appearance: none;
@@ -131,8 +123,7 @@ input.switch {
     height: 13px;
     background-color: #979797;
    border-radius: 50px;
-}
-  
+} 
 input.switch:after {
     content: "";
     position: absolute;
@@ -143,16 +134,13 @@ input.switch:after {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-  }
-  
+}
 input.switch:checked {
     background-color: #000000;
-  }
-  
+}  
 input.switch:checked:after {
     left: 10px;
 }
-
 .video {
     position: relative;
     bottom: 2rem;
@@ -205,11 +193,10 @@ input.switch:checked:after {
     font-weight: 700;
     line-height: 20.63px;
 }
-
 .get-started {
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/back2.png);
+    background-image: url(../img/SAMPLE05.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -226,12 +213,13 @@ input.switch:checked:after {
     margin-bottom: 99px;
     margin-right: 250px;
     position: relative;
+    top: 10%;
 }
 
 .bell-notification {
     position: absolute;
-    top: 56px;
-    left: 11px;
+    bottom: 28rem;
+    left: 9px;
 }
 .phone-arrow-notification {
     position: absolute;
@@ -239,7 +227,7 @@ input.switch:checked:after {
     left: 16.2rem;
 }
 .features {
-    background: #2370ff;
+    background: #00adee;
     background-image: url(../img/backgr3.png);
     background-repeat: no-repeat;
 }
@@ -411,17 +399,25 @@ input.switch:checked:after {
     line-height: 24.38px;
     padding-bottom: 38px;
 }
+.get-up-small-back {
+    display: none;
+}
 footer {
     background-color: #00adee;
     font-family: "Lato";
     color: #ffffff;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: normal;
     line-height: 20.63px;
+    padding: 49px 0;
+    width: 100%;
+}
+
+.footer-content {
     display: flex;
-    padding: 51px 0;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 .footer-nav li, .social-networks li {
     list-style-type: none;

@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>HW-9-Responsive</title>
 </head>
 <body>
+    <div class="content">
     <header>
+        <div class="header-container">
             <div class="logo">
                 <a href="#"><img src="img/LOGO.svg" alt="ball+Sports" srcset=""></a>
             </div>
@@ -19,10 +22,10 @@
             </p>
 
             <div class="apps">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="157" height="47" viewBox="0 0 157 47"><g><g><g><path d="M0 7.335A7.335 7.335 0 0 1 7.335 0h141.38a7.335 7.335 0 0 1 7.336 7.335v32.33A7.335 7.335 0 0 1 148.715 47H7.335A7.335 7.335 0 0 1 0 39.665z"/></g><g><g><text dominant-baseline="text-before-edge" style="font-kerning:normal" fill="#fff" font-family="'Roboto','Roboto'" font-size="10" transform="translate(50 6)"><tspan>Download on th</tspan><tspan>e</tspan></text></g></g><g><g><text dominant-baseline="text-before-edge" style="font-kerning:normal" fill="#fff" font-family="'Roboto','Roboto-Medium'" font-size="21.27" transform="translate(50 17)"><tspan style="font-kerning:normal">App Store</tspan></text></g></g><g><path fill="#fff" d="M31.01 8.08c-1.55.065-3.426 1.032-4.537 2.331-1 1.154-1.871 2.996-1.636 4.762 1.73.136 3.492-.878 4.57-2.178 1.074-1.302 1.802-3.11 1.604-4.915zm-.438 30.735c2.1-.04 3.43-1.904 4.716-3.78 1.403-2.048 2.026-4.034 2.122-4.342l.012-.036-.008-.003c-.201-.082-4.089-1.66-4.127-6.22-.039-3.897 3.183-5.768 3.325-5.862-1.81-2.643-4.629-3.006-5.633-3.047-1.467-.148-2.891.411-4.053.869-.74.29-1.373.54-1.847.54-.526 0-1.178-.258-1.908-.547-.957-.38-2.05-.813-3.179-.792-2.613.04-5.025 1.519-6.37 3.858-2.72 4.71-.698 11.688 1.95 15.507 1.296 1.868 2.837 3.97 4.865 3.894 1.95-.078 2.689-1.26 5.05-1.26 1.204 0 1.966.329 2.7.646.7.302 1.376.594 2.385.575z"/></g></g></g></svg></a>
-                <a href="#"><img src="img/googleapp.png" alt="" srcset=""></a>
+                <a href="#"><img src="img/AppleStore.png" alt="AppleStore-button"></a>
+                <a href="#"><img src="img/googleapp.png" alt="google-play-button"></a>
             </div>
-
+        </div>
     </header>
     <main>
         <section class="what-it-does">
@@ -71,19 +74,20 @@
                 </div>
                 <div class="learn-more"><a href="#">Learn more</a></div>
             </div>
+            <div class="phone-with-player-container">
             <picture class="phone-with-player">
                     <img
-                    sizes="(max-width: 340px) 100vw, 340px"
+                    sizes="(max-width: 353px) 100vw, 353px"
                     srcset="
-                    img/phone-footballist_dxel54/phone-footballist_dxel54_c_scale,w_200.png 200w,
-                    img/phone-footballist_dxel54/phone-footballist_dxel54_c_scale,w_252.png 252w,
-                    img/phone-footballist_dxel54/phone-footballist_dxel54_c_scale,w_298.png 298w,
-                    img/phone-footballist_dxel54/phone-footballist_dxel54_c_scale,w_340.png 340w"
-                    src="img/phone-footballist_dxel54/phone-footballist_dxel54_c_scale,w_340.png"
+                    img/Group_7.1_mgfd6j_c_scale,w_200.png 200w,
+                    img/Group_7.1_mgfd6j_c_scale,w_257.png 257w,
+                    img/Group_7.1_mgfd6j_c_scale,w_353.png 353w"
+                    src="img/Group_7.1_mgfd6j_c_scale,w_353.png"
                     alt="phone-with-player">
                     <img class="bell-notification" src="img/bell.svg" alt="bell" srcset="">
                     <img class="phone-arrow-notification" src="img/phone-icon-arrow.svg" alt="phone-arrow" srcset="">
             </picture>
+        </div>
         </section>
         <section class="features">
                 <h2 class="features-heading">Features That Will Tailor Your Experience</h2>
@@ -233,25 +237,27 @@
                         </p>
                     </div>
                 </div>
-                <div class="slider-arrows">
                     <img src="img/arr-left-png.png" alt="arrow left" class="arrow-left">
                     <img src="img/arr-right.svg" alt="arrow right" class="arrow-right">
-                </div>
                 <div class="slider-dots"><img src="img/dots.png" alt="Slider"></div>
         </section>
         <section class="we-featured-in">
             <h2 class="we-featured-in-heading">We have been featured in</h2>
-            <ul class="companies">
-                <li><a href="#"><img src="./img/sportstv.svg" alt="SportsTV" /></a></li>
-                <li><a href="#"><img src="./img/sports.svg" alt="Sports" /></a></li>
-                <li><a href="#"><img src="./img/nbc.png" alt="NBC sports" /></a></li>
-                <li><a href="#"><img src="./img/designer.png" alt="Designer technology" /></a></li>
-                <li><a href="#"><img src="./img/dn.png" alt="DN" /></a></li>
-                <li><a href="#"><img src="./img/skysports.png" alt="SkySports" /></a></li>
-            </ul>
+            <div class="companies">
+               <a href="#"><img src="./img/sportstv.svg" alt="SportsTV" /></a>
+                <a href="#"><img src="./img/sports.svg" alt="Sports" /></a>
+               <a href="#"><img src="./img/nbc.png" alt="NBC sports" /></a>
+                <a href="#"><img src="./img/designer.png" alt="Designer technology" /></a>
+               <a href="#"><img src="./img/dn.png" alt="DN" /></a>
+               <a href="#"><img src="./img/skysports.png" alt="SkySports" /></a>
+            </div>
         </section>
         <section class="get-up-close">
-             <div class="get-up-content">
+            <div class="get-up-small-back">
+            <img src="img/Framegetup.png"  alt="" srcset="">
+            </div> 
+            <div class="get-up-content">
+                
                 <h2 class="get-up-heading">Get Up Close With Your Team</h2>
                 <p class="get-up-text">If you’re interested in the scores of more than one team (it’s OK, we won’t tell 
                     your mates you support two clubs!), you can choose the scores and competitions that matter to you using the 
@@ -259,19 +265,20 @@
                     It’s got all this:
                 </p>
                 <div class="apps">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="157" height="47" viewBox="0 0 157 47"><g><g><g><path d="M0 7.335A7.335 7.335 0 0 1 7.335 0h141.38a7.335 7.335 0 0 1 7.336 7.335v32.33A7.335 7.335 0 0 1 148.715 47H7.335A7.335 7.335 0 0 1 0 39.665z"/></g><g><g><text dominant-baseline="text-before-edge" style="font-kerning:normal" fill="#fff" font-family="'Roboto','Roboto'" font-size="10" transform="translate(50 6)"><tspan>Download on th</tspan><tspan>e</tspan></text></g></g><g><g><text dominant-baseline="text-before-edge" style="font-kerning:normal" fill="#fff" font-family="'Roboto','Roboto-Medium'" font-size="21.27" transform="translate(50 17)"><tspan style="font-kerning:normal">App Store</tspan></text></g></g><g><path fill="#fff" d="M31.01 8.08c-1.55.065-3.426 1.032-4.537 2.331-1 1.154-1.871 2.996-1.636 4.762 1.73.136 3.492-.878 4.57-2.178 1.074-1.302 1.802-3.11 1.604-4.915zm-.438 30.735c2.1-.04 3.43-1.904 4.716-3.78 1.403-2.048 2.026-4.034 2.122-4.342l.012-.036-.008-.003c-.201-.082-4.089-1.66-4.127-6.22-.039-3.897 3.183-5.768 3.325-5.862-1.81-2.643-4.629-3.006-5.633-3.047-1.467-.148-2.891.411-4.053.869-.74.29-1.373.54-1.847.54-.526 0-1.178-.258-1.908-.547-.957-.38-2.05-.813-3.179-.792-2.613.04-5.025 1.519-6.37 3.858-2.72 4.71-.698 11.688 1.95 15.507 1.296 1.868 2.837 3.97 4.865 3.894 1.95-.078 2.689-1.26 5.05-1.26 1.204 0 1.966.329 2.7.646.7.302 1.376.594 2.385.575z"/></g></g></g></svg></a>
-                    <a href="#"><img src="img/googleapp.png" alt="" srcset=""></a>
+                    <a href="#"><img src="img/AppleStore.png" alt="AppleStore-button" srcset=""></a>
+                    <a href="#"><img src="img/googleapp.png" alt="google-play-button" srcset=""></a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
+        <div class="footer-content">
         <div class="logo">
             <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="99" height="31" viewBox="0 0 99 31"><g><g><g transform="rotate(180 12.5 12.5)"><g/><g><g><path fill="#fff" d="M24.51 9.55a9.06 9.06 0 1 1-18.12 0 9.06 9.06 0 1 1 18.12 0z"/></g><g><path fill="#00adee" d="M12.053 1.15l3.392 2.075v3.143l-2.832 2.058-3.305-.742-.658-4.116z"/></g><g><path fill="#00adee" d="M6.45 10.562L9.307 7.68l3.305.742 1.081 3.329-2.042 3.143-4.018-.771z"/></g><g><path fill="#00adee" d="M18.528 1.02l-3.068 2.2v3.142l2.832 2.058 3.305-.742.499-4.292z"/></g><g><path fill="#00adee" d="M24.448 10.608L21.597 7.68l-3.305.742-1.082 3.329 2.042 3.143 4.008-.753z"/></g><g><path fill="#00adee" d="M17.211 18.433l2.042-3.54-2.042-3.143h-3.519l-2.042 3.143 2.042 3.54z"/></g></g><g><path fill="#fff" d="M23.643 14.44a9.552 9.552 0 0 1-9.826 4.516l-3.866 3.867a.487.487 0 0 1-.691 0 .489.489 0 0 1 0-.69l3.44-3.44a9.592 9.592 0 0 1-5.463-4.275.479.479 0 0 1-.056-.095 9.513 9.513 0 0 1-.446-.869l-4.821 4.821a.487.487 0 0 1-.691 0 .488.488 0 0 1 0-.69l5.13-5.13a9.471 9.471 0 0 1-.454-2.907c0-2.39.883-4.58 2.34-6.256a.504.504 0 0 1 .083-.093A9.59 9.59 0 0 1 11.905.68 9.498 9.498 0 0 1 15.447 0a9.506 9.506 0 0 1 3.277.58A9.577 9.577 0 0 1 22.4 3.012a.489.489 0 0 1 .087.094 9.511 9.511 0 0 1 2.442 7.551l-.002.013a9.481 9.481 0 0 1-1.224 3.666.487.487 0 0 1-.06.102zm-.703-.734c.496-.89.837-1.877.99-2.924l-2.497-2.564-.571.129-2.196.493-.924 2.843 1.738 2.673zm-10.097-2.972l-.616-1.894-2.77-.622-2.499 2.52a8.51 8.51 0 0 0 .986 2.95l3.47.667 1.737-2.672zM8.34 4.762a8.522 8.522 0 0 0-1.463 4.672l1.903-1.92zm8.493 6.503l.863-2.654-2.258-1.64-2.258 1.64.862 2.654zm7.184-1.793A8.524 8.524 0 0 0 22.442 4.6l-.338 2.908zM21.58 3.566a8.602 8.602 0 0 0-2.986-1.99l-2.65 1.898v2.644l2.452 1.781 1.7-.382 1.051-.235zM17.43 1.21a8.555 8.555 0 0 0-4.237.069l2.233 1.366zm-5.422.489a8.61 8.61 0 0 0-2.845 2.027l.568 3.553 2.767.621.722-.525 1.73-1.256v-2.62zm-3.309 13.13a8.606 8.606 0 0 0 3.977 2.831l-1.342-2.325zm5.298 3.168a8.56 8.56 0 0 0 2.9 0l1.779-3.085-1.735-2.67h-2.988l-1.735 2.67zm4.221-.337a8.605 8.605 0 0 0 3.966-2.817l-2.625.493z"/></g><g><path fill="#fff" d="M6.725 17.583L.143 24.165a.488.488 0 1 0 .69.69l6.582-6.581a.489.489 0 0 0-.69-.691z"/></g><g><path fill="#fff" d="M8.108 23.49a.492.492 0 0 0-.488.489.491.491 0 0 0 .488.488.49.49 0 0 0 .346-.834.492.492 0 0 0-.346-.143z"/></g></g><g><g><text dominant-baseline="text-before-edge" style="font-kerning:normal" fill="#fff" font-family="'Product Sans','ProductSans-Bold'" font-size="24" letter-spacing="-.48" transform="translate(28 2)"><tspan style="font-kerning:normal">Sports</tspan></text></g></g></g></g></svg></a>
         </div>
 
         <nav>
-            <div class="list-services">
+            <div class="nav-footer-container">
                 <ul class="footer-nav">
                     <li><a href="#"></a>Download</li>
                     <li><a href="#"></a>Support</li>
@@ -288,6 +295,8 @@
             <li><a href="#"><img src="img/instft.png" alt="instagram"></a></li>
             </ul>
         </div>
+        </div>
     </footer>
+    </div>
 </body>
 </html>
