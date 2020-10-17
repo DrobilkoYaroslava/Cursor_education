@@ -1,20 +1,23 @@
 
 body {
     background-color: #f5d7e2;
+    font-family: 'Lato', sans-serif;
+    height: 1500px;
 }
-.header {
-    background-color: #ebbece;
-    height: 60px;
-    border-bottom: 2px solid #915e71;
+a {
+    color: inherit;
 }
 .custom-bg {
     background-color: #963257;
+
+}
+.header {
+    padding-top: 3rem;
 }
 .line {
     border-bottom: 3px solid #fafafa;
 }
-
-  .form-search input {
+.form-search input {
     width: 80%;
     background: #fafafa;
     border: 1px solid #dbdbdb;
@@ -25,17 +28,82 @@ body {
     background-repeat: no-repeat;
     background-position: 20%;
     background-position-y: center;
-
-  }
+}
 .custom-badge {
     padding-right: 0.4em;
     padding-left: 0.4em;
     font-weight: 400;
     position: absolute;
-    top: 3px;
-    right: 0.25%;
+    top: 0.5%;
+    left: 60%;
 }
 .nav-link {
     position: relative;
     margin-right: 1rem;
+}
+h1 {
+    width: fit-content;
+    margin-right: 2rem;
+}
+.followers {
+    width: 50%;
+}
+.page-author-link {
+    color: #963257;
+    font-weight: bold;
+}
+.page-author {
+    width: 50%;
+    padding: 1rem;
+} 
+.img-thumbnail {
+    border: 1px solid #963257;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-top: 2px solid #000;
+    border-radius: inherit;
+}
+.nav-tabs {
+    border-top: 1px solid #030303;
+    border-bottom: none;
+}
+.tab-name {
+    text-transform: uppercase;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5)!important;
+}
+@media (max-width:768px) {
+    .page-author, .followers, .page-author-info {
+        width: 100%;
+    }
+    .header {
+        padding-top: 1rem;
+    }
+    /* h6 {
+        font-size: 0.8rem;
+    } */
+
+}
+@media (max-width:550px) {
+    h6 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .page-author-link {
+    visibility: hidden;
+    }
+    a {
+        margin-right: 0.5rem;
+    }
+}
+@media (max-width:480px) {
+    .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
 }

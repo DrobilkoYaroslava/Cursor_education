@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>HW-10-Bootstap</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-md sticky-top navbar-dark line custom-bg container">
+      <nav class="navbar sticky-top navbar-dark line custom-bg container">
         <div class="col-12 col-md-4">
           <a href="#" class="nav-brand"><img src="img/logo.svg" alt="instagram-logo"></a>
         </div>
@@ -39,23 +40,97 @@
         </div>
         
       </nav>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div></div>
-                <div></div>
+                <div class="col-6 col-md-3 header-photo">
+                  <img src="img/dc/justice_league_by_johnbecaro_dbtio4j-fullview.jpg" alt="justice_league_poster" class="rounded-circle img-thumbnail">
+                </div>
+                <div class="col-6 col-md-9 justify-content-md-start">
+                    <nav class="navbar navbar-expand-md">
+                        <h1>Justice league</h1>
+                        <div class="header-btn">
+                          <button type="button" class="btn btn-primary">Follow</button> 
+                          <button class="btn btn-primary dropdown-toggle" type="button"></button>
+                          <button type="button" class="btn"><img src="img/dots.svg" alt=""></button>
+                        </div> 
+                    </nav>
+                    <div class="followers">
+                      <ul class="list-inline d-flex justify-content-around">
+                          <li><a href="#"><strong>79</strong> posts</a></li>
+                          <li><a href="#"><strong>379</strong> followers</a></li>
+                          <li><a href="#"><strong>34</strong> following</a></li>
+                      </ul>
+                    </div>
+                      <div class="page-author">
+                        <h4>DC-Comics, Inc.</h4>
+                        <p class="page-author-info">
+                          DC Comics is one of the largest and oldest American comic book companies. 
+                          The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters,
+                          such as Superman, Batman and Wonder Woman. 
+                          The universe also features well-known supervillains who oppose the superheroes such as Lex Luthor and the Joker.
+                          <a href="https://www.dccomics.com/" class="page-author-link">https://www.dccomics.com/</a>
+                        </p>
+                      </div>
+                  </div>
             </div>
+            <div class="row mt-4 align-items-center justify-content-center img-item">
+              <div class="col-sm-2 text-center ">
+                 <a href="#"><img class="rounded-circle img-thumbnail" src="img/dc/batman_colored_by_johnbecaro_daq3dkz-fullview.jpg" alt="Batman"></a>
+                 <h6>Batman</h6>
+              </div>
+              <div class="col-sm-2 text-center">
+                <a href="#"><img class="rounded-circle img-thumbnail" src="img/dc/wonder_woman_bvs_by_johnbecaro_da88aa1-fullview.jpg" alt="Wonder_woman"></a>
+                 <h6>WonderW</h6>
+              </div>
+              <div class="col-sm-2 text-center">
+                <a href="#"><img class="rounded-circle img-thumbnail" src="img/dc/dcfidd4-468191ec-028a-41a0-823d-edc7d011188b.jpg" alt="Aquaman"></a>
+                 <h6>Aquaman</h6>
+              </div>
+              <div class="col-sm-2 text-center">
+                <a href="#"><img class="rounded-circle img-thumbnail" src="img/dc/the_flash_by_johnbecaro_dbt6yff-fullview.jpg" alt="Flash"></a>
+                <h6>Flash</h6>
+             </div>
+             <div class="col-sm-2 text-center">
+              <a href="#"><img class="rounded-circle img-thumbnail" src="img/dc/unnamed.jpg" alt="Superman"></a>
+              <h6>Superman</h6>
+           </div>
+           </div>
         </div>
     </header>
-
-
-
-
-
-
+    <main class="container mt-5">
+      <ul class="nav nav-tabs justify-content-center mb-4">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6333 0H0.366667C0.171111 0 0 0.171111 0 0.366667V10.6333C0 10.8289 0.171111 11 0.366667 11H10.6333C10.8289 11 11 10.8289 11 10.6333V0.366667C11 0.171111 10.8289 0 10.6333 0ZM0.733333 0.733333H3.42222V3.42222H0.733333V0.733333ZM0.733333 4.15556H3.42222V6.84444H0.733333V4.15556ZM3.42222 10.2667H0.733333V7.57778H3.42222V10.2667ZM6.84444 10.2667H4.15556V7.57778H6.84444V10.2667ZM6.84444 6.84444H4.15556V4.15556H6.84444V6.84444ZM6.84444 3.42222H4.15556V0.733333H6.84444V3.42222ZM10.2667 10.2667H7.57778V7.57778H10.2667V10.2667ZM10.2667 6.84444H7.57778V4.15556H10.2667V6.84444ZM10.2667 3.42222H7.57778V0.733333H10.2667V3.42222Z" fill="#262626"/>
+            </svg>
+            <span class="tab-name">Post</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.59575 1.18066H6.99787C6.88085 1.18066 6.76383 1.1339 6.67021 1.04038L5.73404 0.105207C5.59362 -0.0350691 5.38298 -0.0350691 5.24255 0.105207L4.30638 1.04038C4.21277 1.1339 4.09574 1.18066 3.97872 1.18066H1.40426C0.631915 1.18066 0 1.8119 0 2.58342V9.59724C0 10.3688 0.631915 11 1.40426 11H9.59575C10.3681 11 11 10.3688 11 9.59724V2.58342C11 1.8119 10.3681 1.18066 9.59575 1.18066ZM2.71489 10.2986C2.57447 10.2986 2.45745 10.1583 2.48085 10.0181C2.64468 9.26993 3.3 8.70882 4.07234 8.70882H6.88085C7.6766 8.70882 8.33191 9.26993 8.47234 10.0181C8.49574 10.1583 8.37872 10.2986 8.2383 10.2986H2.71489ZM10.2979 9.59724C10.2979 9.99469 9.99362 10.2986 9.59575 10.2986H9.45532C9.3383 10.2986 9.24468 10.2051 9.22128 10.0882C9.08085 8.91923 8.09787 8.00744 6.90426 8.00744H4.09574C2.90213 8.00744 1.89574 8.91923 1.77872 10.0882C1.75532 10.2051 1.6617 10.2986 1.54468 10.2986H1.40426C1.00638 10.2986 0.702128 9.99469 0.702128 9.59724V2.58342C0.702128 2.18597 1.00638 1.88204 1.40426 1.88204H4.00213C4.30638 1.88204 4.61064 1.76514 4.82128 1.53135L5.5 0.853347L6.17872 1.53135C6.38936 1.74176 6.69362 1.88204 6.99787 1.88204H9.59575C9.99362 1.88204 10.2979 2.18597 10.2979 2.58342V9.59724ZM5.5 2.81722C4.25957 2.81722 3.25319 3.82253 3.25319 5.06164C3.25319 6.30074 4.25957 7.30606 5.5 7.30606C6.74043 7.30606 7.74681 6.30074 7.74681 5.06164C7.74681 3.82253 6.74043 2.81722 5.5 2.81722ZM5.5 6.5813C4.65745 6.5813 3.95532 5.90329 3.95532 5.03826C3.95532 4.1966 4.63404 3.49522 5.5 3.49522C6.36596 3.49522 7.04468 4.17322 7.04468 5.03826C7.04468 5.87991 6.34255 6.5813 5.5 6.5813Z" fill="#8E8E8E"/>
+              </svg>
+            <span class="tab-name">Tagged</span></a>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/the_bat_by_wulfrann_dbu1hth-fullview.jpg" alt="Batman" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/wonder_woman_by_wulfrann_dbu1hu5-fullview.jpg" alt="Wonder_woman" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/aquaman_by_wulfrann_dbu1ht7-fullview.jpg" alt="Aquaman" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/the_flash_by_wulfrann_dbu1htt-fullview.jpg" alt="Flash" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/man_of_steel_base_colors_by_quiqueperezsoler_dcbrk8v-fullview.jpg" alt="Superman" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/dd2hxu9-f944d86b-a9e0-4a51-b17f-3d6e75e67528.jpg" alt="Justice-league" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/d9hqz0h-6e76df41-8010-4cae-afda-eb70375e2fd5.jpg" alt="Squad in the museum" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/2239220802b028280cbd9a80db2652b6.jpg" alt="Batman is sitting on Superman" class="img-fluid rounded img-thumbnail shadow"></a></div>
+          <div class="col-md-4 mb-4"><a href="#"><img src="img/dc/2419143.png" alt="Flash" class="img-fluid rounded img-thumbnail shadow"></a></div>
+        </div>
+      </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    
   </body>
 </html>
