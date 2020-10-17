@@ -19,5 +19,11 @@ Homeworks:
 
 9.HW-9-Responsive - "Responsive верстка"
 
+10.HW-10-Bootstrap - "Модульна сітка. Фреймворки"
 
+11.HW-11-Animation - "Анімація в CSS3"
+
+12.HW-12-SCSS-SASS - "Препроцесори"
+
+13.HW-13-БЕМ - "БЕМ"
 
