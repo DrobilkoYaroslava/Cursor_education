@@ -1,0 +1,247 @@
+$blue_btn_color: #111B47;
+$default_btn_width: 189px;
+$btn_txt_color: #fff;
+$heading_txt_color: #091133;
+%width80{
+    width: 80%;
+    margin: 0 auto;
+}
+%h1{
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 66px;
+    font-size: 50px;
+    color: #091133;
+}
+%h2{
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 48px;
+    font-size: 36px;
+    color: #091133;
+}
+%text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #6F7CB2;
+}
+%grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 569px;
+    justify-items: center;
+    align-items:  center;
+}
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin navigation($color){
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    color: $color;
+    text-decoration: none;
+}
+@mixin btn($width, $height, $bg, $txt_color, $fz){
+    width: $width;
+    height: $height;
+    background: $bg;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-size: $fz;
+    font-weight: 500;
+    color: $txt_color;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    background-image: url(../img/designer_1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.header {
+    @extend %width80;
+    max-height: 1000px;
+    padding-top: 20px;
+    .nav-bar {
+        @extend %flex;
+        .nav-bar__menu {
+            display: flex;
+            & li+li {
+                margin-left: 60px;
+            }
+            .nav-bar__link {
+                @include navigation(#505F98)
+            }
+        }
+        .nav-btn {
+            @include btn(160px, 26px, $blue_btn_color, $btn_txt_color, 12px)
+        }
+    }
+    .header-info {
+        width: 540px;
+        margin-top: 200px / 1000px *100%;
+        padding-bottom: 350px / 1000px *100%;
+        .header-heading {
+            @extend %h1;
+            margin-bottom: 20px;
+        }
+        .header-text {
+            @extend %text;
+            font-size: 18px;
+            line-height: 30px;
+            color: #505F98;
+            margin-bottom: 69px;
+        }
+        .btn-purchase {
+            @include btn($default_btn_width, 36px, $blue_btn_color, $btn_txt_color, 16px);
+            margin-right: 30px;
+        }
+        .btn-learn {
+            @include btn($default_btn_width, 36px, none, $heading_txt_color, 16px);
+            border: 2px solid $heading_txt_color;
+        }
+    }
+}
+.main {
+    @extend %width80;
+    .lfp {
+        @extend %grid;
+        &:first-child {
+            padding: 140px 0;
+        }
+        .lfp-heading {
+            @extend %h2;
+            margin-bottom: 16px;
+        }
+        .lfp-text {
+            @extend %text;
+            margin-bottom: 80px;
+        }
+        .lfp-btn {
+            @include btn(150px, 32px, $blue_btn_color, $btn_txt_color, 14px);
+        }
+        .lfp-titles {
+            @extend %grid;
+            justify-items: start;
+            grid-template-columns: 40% 40%;
+            column-gap: 30px;
+            grid-template-rows: 140px;
+        }
+            .title-heading {
+                @extend %text;
+                color: $heading_txt_color;
+                font-weight: 500;
+                margin-top: 14px;
+                margin-bottom: 6px;
+            }
+            .title-text {
+                font-family: 'Roboto';
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 300;
+                color: #5D6970;
+            }
+    }
+}
+.price {
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 230px;
+    padding-bottom: 135px;
+    .lfp-heading {
+        @extend %h2;
+        width: 600px;
+        margin-bottom: 16px;
+    }
+    .lfp-text {
+        @extend %text;
+        width: 600px;
+        margin-bottom: 36px;
+    }
+    .cost {
+        margin-bottom: 60px;
+        .cost-value {
+            @extend %h1;
+            color: #222F65;
+        }
+        .cost-capture {
+            @extend %text;
+            color: #37447E;
+        }
+    }
+    .purchase {
+        .purchase-text{
+            @include navigation(#5D6970);
+            margin-bottom: 9px;
+        }
+        .purchase-btn {
+            @include btn($default_btn_width, 32px, $blue_btn_color, $btn_txt_color, 14px);
+        }
+    }
+}
+.footer {
+    background-color: #E7ECFF;
+    height: 216px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    .footer-top {
+        @extend %flex;
+        @extend %width80;
+        border-bottom: 1px solid #CDD1D4;
+        padding-bottom: 47px;
+        .copyright {
+            .copyright-text {
+                @include navigation(#939EA4);
+            }
+        }
+        .footer-btn { 
+            .footer-small-btn {
+                @include btn(110px, 26px, $blue_btn_color, $btn_txt_color, 12px);
+            }
+        }
+    }
+    .footer-bottom {
+        @extend %flex;
+        @extend %width80;
+        padding-top: 20px;
+        .footer-nav {
+            @extend %flex;
+            & li+li {
+                margin-left: 60px;
+            }
+            .footer-nav__menu {
+                display: flex;
+                .footer-nav__link {
+                    @include navigation(#929ECC);
+                }
+            }
+            .footer-nav__social {
+                display: flex;
+                & li+li {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
