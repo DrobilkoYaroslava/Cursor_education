@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css">
     <title>HW-12-SCSS-SASS</title>
   </head>
   <body>
+      <div class="content">
         <header class="header">
         <nav class="nav-bar">
             <ul class="nav-bar__menu">
@@ -38,7 +40,7 @@
                 <button class="btn-learn">Learn more</button>
         </div>
         </header>
-      <main class="main">
+    <main class="main">
         <section class="lfp">
             <div class="lfp-info-block">
               <h2 class="lfp-heading">Light, Fast & Powerful</h2>
@@ -69,12 +71,24 @@
               </div>
             </div>
             <div>
-                <img src="img/undraw_mobile_login_ikmv.png" alt="girl is near the tablet" class="lfp-img"/>
+                <img
+                    sizes="(max-width: 540px) 100vw, 540px"
+                    srcset="
+                    img/resppic/undraw_mobile_login_ikmv_difzcz_c_scale,w_270.png 270w,
+                    img/resppic/undraw_mobile_login_ikmv_difzcz_c_scale,w_540.png 540w"
+                    src="img/resppic/undraw_mobile_login_ikmv_difzcz_c_scale,w_540.png"
+                    alt="girl and big tablet">
             </div>
         </section>
         <section class="lfp">
           <div>
-            <img src="img/undraw_happy_news_hxmt.png" alt="girl is in a lotus" class="lfp-img" />
+            <img
+                sizes="(max-width: 480px) 100vw, 480px"
+                srcset="
+                img/resppic/undraw_happy_news_hxmt_fsgoyk_c_scale,w_200.png 200w,
+                img/resppic/undraw_happy_news_hxmt_fsgoyk_c_scale,w_480.png 480w"
+                src="img/resppic/undraw_happy_news_hxmt_fsgoyk_c_scale,w_480.png"
+                alt="girl is in a lotus">
           </div>
             <div class="lfp-info-block">
               <h2 class="lfp-heading">Light, Fast & Powerful</h2>
@@ -89,7 +103,13 @@
         </section>
         <section class="lfp">
           <div>
-            <img src="img/undraw_social_influencer_sgsv.png" alt="woman and man are looking at phone" class="lfp-img"/>
+            <img
+                sizes="(max-width: 540px) 100vw, 540px"
+                srcset="
+                img/resppic/undraw_social_influencer_sgsv_hycbzf_c_scale,w_270.png 270w,
+                img/resppic/undraw_social_influencer_sgsv_hycbzf_c_scale,w_540.png 540w"
+                src="img/resppic/undraw_social_influencer_sgsv_hycbzf_c_scale,w_540.png"
+                alt="woman and man are looking at a big phone">
           </div>
             <div class="lfp-info-block">
               <h2 class="lfp-heading">Light, Fast & Powerful</h2>
@@ -104,7 +124,13 @@
         </section>
         <section class="lfp">
           <div>
-            <img src="img/undraw_mention_6k5d.png" alt="girl is near at lotus" class="lfp-img" />
+            <img
+                sizes="(max-width: 445px) 100vw, 445px"
+                srcset="
+                img/resppic/undraw_mention_6k5d_meuhno_c_scale,w_270.png 270w,
+                img/resppic/undraw_mention_6k5d_meuhno_c_scale,w_445.png 445w"
+                src="img/resppic/undraw_mention_6k5d_meuhno_c_scale,w_445.png"
+                alt="girl is near a lotus">
           </div>
             <div class="lfp-info-block">
               <h2 class="lfp-heading">Light, Fast & Powerful</h2>
@@ -120,7 +146,7 @@
                 </form>
             </div>
         </section>
-      </main>
+    </main>
       <section class="price">
         <h2 class="lfp-heading">A Price To Suit Everyone</h2>
         <p class="lfp-text">
@@ -170,5 +196,6 @@
             </nav>
         </div>
         </footer>
+    </div>
   </body>
 </html>

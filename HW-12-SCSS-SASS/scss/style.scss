@@ -1,3 +1,4 @@
+@import "media";
 $blue_btn_color: #111B47;
 $default_btn_width: 189px;
 $btn_txt_color: #fff;
@@ -29,8 +30,9 @@ $heading_txt_color: #091133;
 }
 %grid{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 569px;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-rows: 35rem;
+    column-gap: 30px;
     justify-items: center;
     align-items:  center;
 }
@@ -88,9 +90,9 @@ body {
         }
     }
     .header-info {
-        width: 540px;
+        width: 35rem;
         margin-top: 200px / 1000px *100%;
-        padding-bottom: 350px / 1000px *100%;
+        margin-bottom: 350px / 1000px *100%;
         .header-heading {
             @extend %h1;
             margin-bottom: 20px;
@@ -116,61 +118,67 @@ body {
     @extend %width80;
     .lfp {
         @extend %grid;
+        padding-left: 2rem;
+        padding-right: 2rem;
         &:first-child {
-            padding: 140px 0;
+            padding: 9rem 0;
         }
-        .lfp-heading {
-            @extend %h2;
-            margin-bottom: 16px;
-        }
-        .lfp-text {
-            @extend %text;
-            margin-bottom: 80px;
-        }
-        .lfp-btn {
-            @include btn(150px, 32px, $blue_btn_color, $btn_txt_color, 14px);
-        }
-        .lfp-titles {
-            @extend %grid;
-            justify-items: start;
-            grid-template-columns: 40% 40%;
-            column-gap: 30px;
-            grid-template-rows: 140px;
-        }
-            .title-heading {
+        .lfp-info-block {
+            width: 80%;
+            .lfp-heading {
+                @extend %h2;
+                margin-bottom: 16px;
+            }
+            .lfp-text {
                 @extend %text;
-                color: $heading_txt_color;
-                font-weight: 500;
-                margin-top: 14px;
-                margin-bottom: 6px;
+                margin-bottom: 80px;
             }
-            .title-text {
-                font-family: 'Roboto';
-                font-size: 12px;
-                line-height: 18px;
-                font-weight: 300;
-                color: #5D6970;
+            .lfp-btn {
+                @include btn(150px, 32px, $blue_btn_color, $btn_txt_color, 14px);
             }
+            .lfp-titles {
+                @extend %grid;
+                justify-items: start;
+                grid-template-columns: 40% 40%;
+                column-gap: 30px;
+                grid-template-rows: 9rem;
+                .title-heading {
+                    @extend %text;
+                    color: $heading_txt_color;
+                    font-weight: 500;
+                    margin-top: 14px;
+                    margin-bottom: 6px;
+                }
+                .title-text {
+                    font-family: 'Roboto';
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 300;
+                    color: #5D6970;
+                } 
+            }       
+        }        
     }
 }
 .price {
     background-image: url(../img/Rectangle.png);
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 230px;
-    padding-bottom: 135px;
+    padding-top: 14rem;
+    padding-bottom: 8.5rem;
     .lfp-heading {
         @extend %h2;
-        width: 600px;
+        width: 37rem;
         margin-bottom: 16px;
     }
     .lfp-text {
         @extend %text;
-        width: 600px;
+        width: 37rem;
         margin-bottom: 36px;
     }
     .cost {
@@ -196,7 +204,6 @@ body {
 }
 .footer {
     background-color: #E7ECFF;
-    height: 216px;
     padding-top: 60px;
     padding-bottom: 40px;
     .footer-top {
@@ -239,6 +246,7 @@ body {
         }
     }
 }
+
 
 
 

@@ -1,0 +1,122 @@
+@media (max-width: 1280px) {
+    .header {
+        padding-bottom: 10rem;
+        .header-info{
+            background-color: rgba(255, 255, 255, .7);
+            border-radius: 8px;
+        }
+    }
+}
+@media (max-width: 760px) {
+    body {
+        min-width: 360px;
+        margin: 0 auto;
+        contain: layout;
+        background-image: none; 
+        background-color: #fff;
+    }
+    .content {
+        min-width: 360px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(360px, 720px);
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+    .header {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f6f9;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .nav-bar {
+            display: inline-block;
+        }
+        .nav-bar__menu {
+            visibility: hidden;
+        }
+        .nav-btn {
+            visibility: hidden;
+        }
+        .header-info {
+            width: 80%;
+            margin-top: 5%;
+            margin-bottom: 0;
+            padding-bottom: 15%;
+            background-color: rgba(255, 255, 255, 0);
+            .header-heading {
+                font-size: 35px;
+            }
+            .btn-purchase {
+                margin-right: 0rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        padding: 0;
+        margin: 0em;
+        .lfp {
+            grid-template-rows: auto;
+            row-gap: 3rem;
+        }
+        .lfp:first-child {
+            padding: 2rem 0;
+        }
+        .lfp {
+            .lfp-info-block {
+                .lfp-text {
+                    margin-bottom: 3rem;
+                }
+                .lfp-titles {
+                    grid-template-columns: 50% 50%;
+                    column-gap: 1rem;
+                }
+                .lfp-heading {
+                    font-size: 26px;
+                }
+            }
+            .lfp-info-block:last-child {
+                display: grid;
+                justify-items: center;
+            }
+        }
+    }
+    .price {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        .lfp-heading {
+            width: 80%;
+        }
+        .lfp-text {
+            width: 80%;
+        }
+    }
+    .footer {
+        padding-top: 0;
+        padding-bottom: 20px;
+        .footer-top {
+            display: none;
+        }
+        .footer-bottom {
+            flex-direction: column;
+            .footer-nav {
+                & li+li {
+                    margin-left: 2rem;
+                }
+                .footer-nav__menu {
+                    margin-bottom: 2rem;
+                }
+                .footer-nav__social {
+                    & li+li {
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

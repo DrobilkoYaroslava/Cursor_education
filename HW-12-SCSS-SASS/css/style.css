@@ -1,3 +1,137 @@
+@media (max-width: 1280px) {
+  .header {
+    padding-bottom: 10rem;
+  }
+  .header .header-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    min-width: 360px;
+    margin: 0 auto;
+    contain: layout;
+    background-image: none;
+    background-color: #fff;
+  }
+  .content {
+    min-width: 360px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(360px, 720px);
+        grid-template-columns: minmax(360px, 720px);
+    grid-auto-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .header .nav-bar {
+    display: inline-block;
+  }
+  .header .nav-bar__menu {
+    visibility: hidden;
+  }
+  .header .nav-btn {
+    visibility: hidden;
+  }
+  .header .header-info {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 15%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header .header-info .header-heading {
+    font-size: 35px;
+  }
+  .header .header-info .btn-purchase {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .main {
+    width: 100%;
+    padding: 0;
+    margin: 0em;
+  }
+  .main .lfp {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    row-gap: 3rem;
+  }
+  .main .lfp:first-child {
+    padding: 2rem 0;
+  }
+  .main .lfp .lfp-info-block .lfp-text {
+    margin-bottom: 3rem;
+  }
+  .main .lfp .lfp-info-block .lfp-titles {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .main .lfp .lfp-info-block .lfp-heading {
+    font-size: 26px;
+  }
+  .main .lfp .lfp-info-block:last-child {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .price {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .price .lfp-heading {
+    width: 80%;
+  }
+  .price .lfp-text {
+    width: 80%;
+  }
+  .footer {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .footer .footer-top {
+    display: none;
+  }
+  .footer .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-bottom .footer-nav li + li {
+    margin-left: 2rem;
+  }
+  .footer .footer-bottom .footer-nav .footer-nav__menu {
+    margin-bottom: 2rem;
+  }
+  .footer .footer-bottom .footer-nav .footer-nav__social li + li {
+    margin-left: 3rem;
+  }
+}
+
 .header, .main, .footer .footer-top, .footer .footer-bottom {
   width: 80%;
   margin: 0 auto;
@@ -11,7 +145,7 @@
   color: #091133;
 }
 
-.main .lfp .lfp-heading, .price .lfp-heading {
+.main .lfp .lfp-info-block .lfp-heading, .price .lfp-heading {
   font-family: 'Roboto';
   font-weight: 500;
   line-height: 48px;
@@ -19,7 +153,7 @@
   color: #091133;
 }
 
-.header .header-info .header-text, .main .lfp .lfp-text, .main .lfp .title-heading, .price .lfp-text, .price .cost .cost-capture {
+.header .header-info .header-text, .main .lfp .lfp-info-block .lfp-text, .main .lfp .lfp-info-block .lfp-titles .title-heading, .price .lfp-text, .price .cost .cost-capture {
   font-family: 'Roboto';
   font-weight: 400;
   line-height: 26px;
@@ -27,13 +161,15 @@
   color: #6F7CB2;
 }
 
-.main .lfp, .main .lfp .lfp-titles {
+.main .lfp, .main .lfp .lfp-info-block .lfp-titles {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 569px;
-      grid-template-rows: 569px;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -ms-grid-rows: 35rem;
+      grid-template-rows: 35rem;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -100,9 +236,9 @@ body {
 }
 
 .header .header-info {
-  width: 540px;
+  width: 35rem;
   margin-top: 20%;
-  padding-bottom: 35%;
+  margin-bottom: 35%;
 }
 
 .header .header-info .header-heading {
@@ -148,19 +284,28 @@ body {
   border: 2px solid #091133;
 }
 
-.main .lfp:first-child {
-  padding: 140px 0;
+.main .lfp {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.main .lfp .lfp-heading {
+.main .lfp:first-child {
+  padding: 9rem 0;
+}
+
+.main .lfp .lfp-info-block {
+  width: 80%;
+}
+
+.main .lfp .lfp-info-block .lfp-heading {
   margin-bottom: 16px;
 }
 
-.main .lfp .lfp-text {
+.main .lfp .lfp-info-block .lfp-text {
   margin-bottom: 80px;
 }
 
-.main .lfp .lfp-btn {
+.main .lfp .lfp-info-block .lfp-btn {
   width: 150px;
   height: 32px;
   background: #111B47;
@@ -175,24 +320,24 @@ body {
   cursor: pointer;
 }
 
-.main .lfp .lfp-titles {
+.main .lfp .lfp-info-block .lfp-titles {
   justify-items: start;
   -ms-grid-columns: 40% 40%;
       grid-template-columns: 40% 40%;
   -webkit-column-gap: 30px;
           column-gap: 30px;
-  -ms-grid-rows: 140px;
-      grid-template-rows: 140px;
+  -ms-grid-rows: 9rem;
+      grid-template-rows: 9rem;
 }
 
-.main .lfp .title-heading {
+.main .lfp .lfp-info-block .lfp-titles .title-heading {
   color: #091133;
   font-weight: 500;
   margin-top: 14px;
   margin-bottom: 6px;
 }
 
-.main .lfp .title-text {
+.main .lfp .lfp-info-block .lfp-titles .title-text {
   font-family: 'Roboto';
   font-size: 12px;
   line-height: 18px;
@@ -204,6 +349,7 @@ body {
   background-image: url(../img/Rectangle.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,17 +361,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 230px;
-  padding-bottom: 135px;
+  padding-top: 14rem;
+  padding-bottom: 8.5rem;
 }
 
 .price .lfp-heading {
-  width: 600px;
+  width: 37rem;
   margin-bottom: 16px;
 }
 
 .price .lfp-text {
-  width: 600px;
+  width: 37rem;
   margin-bottom: 36px;
 }
 
@@ -268,7 +414,6 @@ body {
 
 .footer {
   background-color: #E7ECFF;
-  height: 216px;
   padding-top: 60px;
   padding-bottom: 40px;
 }
