@@ -96,7 +96,7 @@ body {
                 margin-left: 60px;
             }
             .nav-bar__link {
-                @include navigation(#505F98)
+                @include navigation(#505F98);
                 &:hover {
                     font-weight: 700;
                     color: $btn_txt_color;
@@ -107,7 +107,7 @@ body {
             }
         }
         .nav-btn {
-            @include btn(160px, 26px, $blue_btn_color, $btn_txt_color, 12px)
+            @include btn(160px, 26px, $blue_btn_color, $btn_txt_color, 12px);
             @extend %hover;
         }
     }

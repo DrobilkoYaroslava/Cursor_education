@@ -46,14 +46,3 @@
     transform: rotate(360deg);
     } 
 }
-.footer-nav {
-    .footer-nav__social {
-        .footer-nav-social__link img{
-            transition: all 0.8s ease-in-out;
-            &:hover {
-            transform: rotate(360deg);
-            box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3333ff 0px 0px 20px, #3333ff 0px 0px 30px, #3333ff 0px 0px 40px, #3333ff 0px 0px 50px, #3333ff 0px 0px 75px;
-            }
-        }
-    }
-}
