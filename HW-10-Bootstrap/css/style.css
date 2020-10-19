@@ -83,10 +83,6 @@ h1 {
     .header {
         padding-top: 1rem;
     }
-    /* h6 {
-        font-size: 0.8rem;
-    } */
-
 }
 @media (max-width:550px) {
     h6 {
@@ -102,7 +98,6 @@ h1 {
 }
 @media (max-width:480px) {
     .col-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 100%;
     max-width: 100%;
     }
