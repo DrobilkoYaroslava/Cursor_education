@@ -1,0 +1,59 @@
+.nav-bar {
+    .nav-bar__menu { 
+        .nav-bar__link {
+            position:relative;
+            z-index: 1;
+            &:hover {
+            color: #091133;
+            }
+            &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            content: '.';
+            color: transparent;
+            background: #505F98;
+            visibility: none;
+            opacity: 0;
+            z-index: -1;
+            }
+            &:hover:after {
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+            }
+        }
+    }
+}
+.logo svg{
+    translate:(-50%,-50%);
+    &:hover { 
+    animation: titleimg 1.5s;
+    box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3333ff 0px 0px 20px, #3333ff 0px 0px 30px, #3333ff 0px 0px 40px, #3333ff 0px 0px 50px, #3333ff 0px 0px 75px; 
+    }
+}
+@keyframes titleimg {
+    70% {
+    transform: rotate(380deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    } 
+}
+.footer-nav {
+    .footer-nav__social {
+        .footer-nav-social__link img{
+            transition: all 0.8s ease-in-out;
+            &:hover {
+            transform: rotate(360deg);
+            box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3333ff 0px 0px 20px, #3333ff 0px 0px 30px, #3333ff 0px 0px 40px, #3333ff 0px 0px 50px, #3333ff 0px 0px 75px;
+            }
+        }
+    }
+}

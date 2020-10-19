@@ -188,6 +188,19 @@
           align-items: center;
 }
 
+.header .nav-bar .nav-btn:hover, .header .header-info .btn-purchase:hover, .header .header-info .btn-learn:hover, .main .lfp .lfp-info-block .lfp-btn:hover, .price .purchase .purchase-btn:hover, .footer .footer-top .footer-btn .footer-small-btn:hover {
+  color: #091133;
+  background-color: rgba(121, 142, 224, 0.5);
+  border: 2px solid #091133;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.header .header-info .header-heading:hover, .main .lfp .lfp-info-block .lfp-heading:hover, .price .lfp-heading:hover {
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
@@ -218,6 +231,16 @@ body {
   font-size: 14px;
   color: #505F98;
   text-decoration: none;
+}
+
+.header .nav-bar .nav-bar__menu .nav-bar__link:hover {
+  font-weight: 700;
+  color: #fff;
+}
+
+.header .nav-bar .nav-bar__menu .nav-bar__link:after, .header .nav-bar .nav-bar__menu .nav-bar__link :before {
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .header .nav-bar .nav-btn {
@@ -282,6 +305,10 @@ body {
   outline: none;
   cursor: pointer;
   border: 2px solid #091133;
+}
+
+.header .header-info .btn-learn:hover {
+  color: #fff;
 }
 
 .main .lfp {
@@ -470,6 +497,11 @@ body {
   text-decoration: none;
 }
 
+.footer .footer-bottom .footer-nav .footer-nav__menu .footer-nav__link:hover {
+  color: #091133;
+  font-weight: 500;
+}
+
 .footer .footer-bottom .footer-nav .footer-nav__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,4 +510,21 @@ body {
 
 .footer .footer-bottom .footer-nav .footer-nav__social li + li {
   margin-left: 30px;
+}
+
+.footer .footer-bottom .footer-nav .footer-nav__social .fab {
+  color: #B0B8BC;
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-size: 16px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.footer .footer-bottom .footer-nav .footer-nav__social .fab:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3333ff 0px 0px 20px, #3333ff 0px 0px 30px, #3333ff 0px 0px 40px, #3333ff 0px 0px 50px, #3333ff 0px 0px 75px;
+          box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3333ff 0px 0px 20px, #3333ff 0px 0px 30px, #3333ff 0px 0px 40px, #3333ff 0px 0px 50px, #3333ff 0px 0px 75px;
+  color: #091133;
+  font-size: 20px;
 }
