@@ -1,0 +1,33 @@
+.wrapper__item-search-btn {
+    display: grid;
+    grid-template-columns: 36px 48px;
+    grid-template-rows: 48px;
+    column-gap: 20px;
+    position: relative;
+    top: -16.5rem;
+    left: 15rem;
+}
+.btn-search__item {
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    &--big {
+        width: 48px;
+        height: 48px;
+    }
+    &--small {
+        width: 36px;
+        height: 36px;
+    }
+    &--orange {
+        background: #FF3E1D;
+    }
+    &--green {
+        background: #00D200;
+    }
+}
+.icon-search--small {
+    width: 20px;
+    height: 20px;
+}

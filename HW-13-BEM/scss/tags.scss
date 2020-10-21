@@ -1,0 +1,65 @@
+$color_black: #2C2C2C;
+$color_blue: #18A0FB;
+$color_white: #fff;
+$color_grey_bg: rgba(224, 224, 224, 0.3);
+$color_grey_br: rgba(224,224,224,1);
+%tag_big {
+    width: 65px;
+    height: 28px;
+}
+%tag_small {
+    width: 51px;
+    height: 28px;
+}
+%grid-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+.wrapper__item-tags {
+    display: grid;
+    grid-template-columns: repeat(2, 65px);
+    grid-template-rows: repeat(2, 28px);
+    grid-auto-flow: column;
+    column-gap: 12px;
+    row-gap: 14px;
+    justify-items: start;
+}
+.button-tag {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.15px;
+    &--big {
+        @extend %tag_big;
+    }
+    &--small {
+        @extend %tag_small;
+    }
+    &--grid {
+        @extend %grid-btn;
+    }
+    &--white {
+        background-color: $color_white;
+        border: 1px solid $color_grey_br;
+        color: $color_black;
+    }
+    &--grey {
+        background-color: $color_grey_bg;
+        border: 1px solid $color_grey_br;
+        color: $color_black;
+    }
+    &--blue {
+        background-color: $color_blue;
+        color: $color_white;
+    }
+}
+.icon-close--white {
+    path {
+        stroke: $color_white;
+        fill: $color_white;
+    }
+}

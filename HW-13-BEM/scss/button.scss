@@ -1,0 +1,113 @@
+$color_blue: #18A0FB;
+$color_white: #fff;
+$color_grey: #878787;
+$color_grey_bg: rgba(224, 224, 224, 0.3);
+$color_black: #2C2C2C;
+%size_big {
+    width: 144px;
+    height: 46px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.15px;
+}
+%icon_size {
+    width: 24px;
+    height: 24px;
+}
+%icon_size_small {
+    width: 20px;
+    height: 20px;
+}
+%grid-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+@mixin colgroup ($bg, $color) {
+    background-color: $bg;
+    color: $color;
+}
+@mixin size_small ($width) {
+    width: $width;
+    height: 36px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.73px;
+}
+.wrapper__item {
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+.wrapper__item-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 144px);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    row-gap: 24px;
+    justify-items: center;
+}
+.button__item {
+    &--blue-white {
+        @include colgroup($color_blue, $color_white);
+    }
+    &--grey {
+        @include colgroup($color_grey_bg, $color_grey);
+    }
+    &--white-black{
+        @include colgroup($color_white, $color_black);
+        border: 0.5px solid #E0E0E0;
+    }
+    &--white-blue{
+        @include colgroup($color_white, $color_blue);
+        border: 0.5px solid $color_blue;
+    }
+    &--red {
+        @include colgroup(#FF3E1D, $color_white);
+    }
+    &--big {
+        @extend %size_big;
+    }
+    &--small {
+        @include size_small(116px);
+    }
+    &--smaller {
+        @include size_small(111px);
+    }
+    &--grid {
+        @extend %grid-btn;
+    }
+}
+.icon-down__item {
+    &--big {
+        @extend %icon_size;
+    }
+    &--small {
+        @extend %icon_size_small;
+    }
+    &--white {
+        path {
+            stroke: $color_white;
+        }
+    }
+    &--grey {
+        path {
+            stroke: $color_grey;
+        }
+    }
+    &--black {
+        path {
+            stroke: $color_black;
+        }
+    }
+    &--blue{
+        path {
+            stroke: $color_blue;
+        }
+    }
+}
+
+
