@@ -292,7 +292,7 @@ button {
 }
 
 .about .description:last-child img {
-    width: auto;
+    width: 100%;
     height: 100%;
     display: block;
     margin: 0 auto;
@@ -428,6 +428,8 @@ button {
 .reviews .arrow-left, .reviews .arrow-right {
     position: absolute;
     top: 50%;
+    z-index: 10;
+    cursor: pointer;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -435,16 +437,14 @@ button {
 
 .reviews .arrow-right {
     right: 50px;
-    cursor: pointer;
 }
 
 .reviews .arrow-left {
     left: 50px;
-    cursor: pointer;
 }
 
 .reviews .review-slider {
-    width: 90%;
+    width: 80%;
     max-width: 900px;
     margin: 50px auto;
 }
@@ -470,7 +470,6 @@ button {
     display: block;
     text-align: right;
     margin: 10px 0 auto 0;
-    vertical-align: top;
     padding-top: 15px;
 }
 
@@ -597,4 +596,7 @@ footer {
 }
 .slick-slide img {
     display: initial;
+}
+.slide {
+    outline: none;
 }
