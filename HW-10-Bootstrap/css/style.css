@@ -165,4 +165,7 @@ h1 {
     .btn-custom {
         margin-bottom: .5rem;
     }
+    .nav-link {
+        margin-right: 5px;
+    }
 }
